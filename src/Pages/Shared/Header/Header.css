@@ -1,0 +1,11 @@
+.nav-link-item{
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav-link-item:hover{
+    padding: 5px 15px !important;
+    background-color: rgb(197, 53, 55) !important;
+    transition: 0.3s !important;
+}
