@@ -5,7 +5,6 @@ import mountainBikes from '../../../images/Catagories/mountain-bikes.jpg';
 import crossCountryBikes from '../../../images/Catagories/cross-country-bikes.jpg';
 import wyomingBikes from '../../../images/Catagories/wyoming-bikes.jpg';
 import gmrcBikes from '../../../images/Catagories/gmrc-bikes.jpg';
-import Typewriter from 'typewriter-effect';
 import './BikeCatagories.css';
 
 const BikeCatagories = () => {
@@ -13,13 +12,7 @@ const BikeCatagories = () => {
         <div className='mx-auto catagories'>
             <div className='d-flex align-items-center justify-content-center mb-5'>
                 <div className='straight-line'></div>
-                <h1 className='section-header-title'>
-                    <Typewriter
-                        onInit={(typewriter) => {
-                            typewriter.typeString("Bike Catagories").start();
-                        }}
-                    />
-                </h1>
+                <h1 className='section-header-title'>Bike Catagories</h1>
             </div>
             <div className="row g-5">
                 <div className="col-4">
