@@ -14,7 +14,7 @@ const AdventureBikes = () => {
                 <div className="col-6 my-auto">
                     <div className='d-flex align-items-center justify-content-center mb-5'>
                         <div className='straight-line'></div>
-                        <h1 className='services-title'>Best Adventure Tourer Bikes</h1>
+                        <h1 className='section-header-title'>Best Adventure Tourer Bikes</h1>
                     </div>
                     <div className='row mx-auto'>
                         <div className="col-4">
