@@ -1,7 +1,7 @@
 import React from 'react';
 import Typewriter from 'typewriter-effect';
 
-const News = () => {
+const Team = () => {
     return (
         <div>
             <div className='d-flex align-items-center justify-content-center my-5'>
@@ -9,7 +9,7 @@ const News = () => {
                 <h1 className='section-header-title'>
                     <Typewriter
                         onInit={(typewriter) => {
-                            typewriter.typeString("Latest News").start();
+                            typewriter.typeString("Meet Our Team").start();
                         }}
                     />
                 </h1>
@@ -18,4 +18,4 @@ const News = () => {
     );
 };
 
-export default News;
+export default Team;

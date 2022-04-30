@@ -17,15 +17,16 @@ const Header = () => {
           <Navbar.Collapse id="responsive-navbar-nav">
 
             <Nav className="me-auto">
-                <CustomLink className="ms-5 nav-link-item" to="home">Home</CustomLink>
+                <CustomLink className="ms-4 nav-link-item" to="home">Home</CustomLink>
             </Nav>
 
             <Nav>
-              <CustomLink className="me-5 nav-link-item" to="blogs">Blogs</CustomLink>
-              <CustomLink className="me-5 nav-link-item" to="news">News</CustomLink>
-              <CustomLink className="me-5 nav-link-item" to="about">About</CustomLink>
-              <CustomLink className="me-5 nav-link-item" to="contact">Contact</CustomLink>
-              <CustomLink className="me-5 nav-link-item" to="login">Sign In</CustomLink>
+              <CustomLink className="me-4 nav-link-item" to="services">Services</CustomLink>
+              <CustomLink className="me-4 nav-link-item" to="blogs">Blogs</CustomLink>
+              <CustomLink className="me-4 nav-link-item" to="about">About</CustomLink>
+              <CustomLink className="me-4 nav-link-item" to="team">Team</CustomLink>
+              <CustomLink className="me-4 nav-link-item" to="contact">Contact</CustomLink>
+              <CustomLink className="me-4 nav-link-item" to="login">Sign In</CustomLink>
             </Nav>
           </Navbar.Collapse>
         </Container>

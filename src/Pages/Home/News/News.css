@@ -1,0 +1,24 @@
+.news-section {
+    margin-bottom: 150px;
+}
+
+.news-section h6 {
+    width: 70%;
+    margin: 15px auto;
+    color: rgb(197, 53, 55);
+}
+
+.news-section h2 {
+    color: rgb(27, 62, 65);
+    width: 70%;
+    margin: 10px auto;
+}
+
+.news-section p {
+    width: 70%;
+    margin: 15px auto;
+}
+
+.news-div {
+    /* background-color: rgba(212, 197, 197, 0.199); */
+}
