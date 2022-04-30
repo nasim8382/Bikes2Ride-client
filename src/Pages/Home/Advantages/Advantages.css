@@ -1,0 +1,32 @@
+.advantages-section {
+    background-image: url("../../../images//bg.jpg");
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.advantage-header {
+    padding-left: 10%;
+}
+
+.advantage-description {
+    padding-left: 10%;
+}
+
+.advantage-header-title {
+    font-size: 50px;
+    color: aliceblue;
+}
+
+.advantage-text h3 {
+    color: rgb(255, 40, 91);
+    width: 270px;
+    margin: 20px auto;
+}
+
+.advantage-text p {
+    color: white;
+    width: 270px;
+    margin: 20px auto;
+}

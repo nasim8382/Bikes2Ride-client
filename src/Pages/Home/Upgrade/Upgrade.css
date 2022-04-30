@@ -21,7 +21,7 @@
 .all-btn:hover {
     color: #fff;
     cursor: pointer;
-    border: 3px solid rgb(27, 62, 65)
+    border: 3px solid rgb(27, 62, 65);
 }
 
 .all-btn:before{
