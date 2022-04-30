@@ -1,9 +1,12 @@
 import React from 'react';
+import BikeCatagories from '../BikeCatagories/BikeCatagories';
+import SpecialBicycle from '../SpecialBicycle/SpecialBicycle';
 
 const Home = () => {
     return (
         <div>
-            <h2>This is home page</h2>
+            <SpecialBicycle></SpecialBicycle>
+            <BikeCatagories></BikeCatagories>
         </div>
     );
 };
