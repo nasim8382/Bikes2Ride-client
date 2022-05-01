@@ -1,0 +1,35 @@
+.contact-section {
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
+.contact-text h3{
+    color: rgb(27, 62, 65);
+}
+
+.contact-text p{
+    padding-left: 20px;
+    margin-top: 15px;
+}
+
+.contact-icons {
+    color: rgb(197, 53, 55);
+    font-size: 30px;
+}
+
+.contact-social-icons:hover {
+    color: rgb(27, 62, 65);
+    transition: 0.4s;
+}
+
+.contact-full-line {
+    width: 100%;
+    height: 2px;
+    background-color: rgb(220, 228, 235);
+}
+
+.contact-half-line {
+    width: 20%;
+    height: 2px;
+    background-color: rgb(27, 62, 65);
+}
