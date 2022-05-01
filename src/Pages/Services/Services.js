@@ -52,7 +52,7 @@ const Services = () => {
                 </div>
             </div>
 
-            <div className='row service-section'>
+            <div className='row service-section service-section-third'>
                 <div className="col-6">
                     <img className='img-fluid w-100' src={service3} alt="" />
                 </div>

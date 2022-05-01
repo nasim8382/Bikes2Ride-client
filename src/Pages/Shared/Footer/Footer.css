@@ -1,0 +1,60 @@
+.footer-section {
+    background-image: url("../../../images//footer.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.newsletter-section {
+    position: absolute;
+    width: 60%;
+    height: 100px;
+    background-color: rgb(27, 62, 65);
+    top: -15%;
+    left: 20%;
+}
+
+.newsletter-title {
+    color: rgb(255, 40, 91);
+    font-size: 40px;
+    padding-top: 4%;
+}
+
+.footer-input {
+    width: 50%;
+    height: 58px;
+}
+
+::placeholder {
+    color: rgb(255, 40, 91);
+    padding-left: 30px;
+}
+
+.footer-text {
+    padding-top: 60px;
+    padding-bottom: 150px;
+}
+
+.footer-logo-image {
+    height: 30px;
+}
+
+.copywrite-text {
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.footer-social-icons {
+    color: rgb(245, 234, 221);
+    font-size: 30px;
+}
+
+.footer-social-icons:hover {
+    color: rgb(255, 40, 91);
+    transition: 0.4s;
+}
+
+.footer-services h6:hover {
+    color: rgb(255, 40, 91);
+    cursor: pointer;
+}

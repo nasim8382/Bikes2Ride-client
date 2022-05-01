@@ -41,10 +41,10 @@ const Contact = () => {
                             <div className='contact-half-line'></div>
                         </div>
                         <div className='d-flex mb-4'>
-                        <span className='contact-icons contact-social-icons me-4'> <BsFacebook/> </span>
-                        <span className='contact-icons contact-social-icons me-4'> <BsInstagram/> </span>
-                        <span className='contact-icons contact-social-icons me-4'> <BsTwitter/> </span>
-                        <span className='contact-icons contact-social-icons'> <SiYoutube/> </span>
+                            <span className='contact-icons contact-social-icons me-4'> <BsFacebook/> </span>
+                            <span className='contact-icons contact-social-icons me-4'> <BsInstagram/> </span>
+                            <span className='contact-icons contact-social-icons me-4'> <BsTwitter/> </span>
+                            <span className='contact-icons contact-social-icons'> <SiYoutube/> </span>
                         </div>
 
                         <h3>Phones</h3>
