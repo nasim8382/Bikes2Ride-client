@@ -2,6 +2,7 @@
     font-size: 18px;
     text-decoration: none;
     text-transform: uppercase;
+    padding: 5px 15px !important;
 }
 
 .nav-link-item:hover{
@@ -12,4 +13,30 @@
 
 .bg-dark {
     background-color: rgb(27, 62, 65) !important;
+}
+
+.dropdown-menu {
+    padding: 10px 0 !important;
+    background-color: rgb(27, 62, 65) !important;
+}
+
+.dropdown-title {
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 5px 15px;
+}
+
+.dropdown_item {
+    display: block;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 8px 25px !important;
+}
+
+.dropdown_item:hover {
+    font-weight: bold;
+    color: rgb(255, 40, 91) !important;
+    transition: ease-in 0.2s;
 }

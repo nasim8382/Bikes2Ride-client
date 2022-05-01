@@ -1,0 +1,67 @@
+.mission-section {
+    margin-top: 100px;
+}
+
+.progress-text {
+    color: rgb(27, 62, 65);
+    margin: 10px 0;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: rgb(220, 228, 235);
+}
+
+.percentage-width {
+    height: 25px;
+    background-color: rgb(27, 62, 65);
+}
+
+.progress-one {
+    width: 80%;
+}
+
+.progress-two {
+    width: 96%;
+}
+
+.progress-three {
+    width: 92%;
+}
+
+.history-section {
+    margin-top: 150px;
+    margin-bottom: 100px;
+    background-color: rgb(27, 62, 65);
+}
+
+.history-title {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.history-header-title {
+    font-size: 50px;
+    color: white;
+}
+
+.history-text {
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+}
+
+.testimonials-section {
+    margin-bottom: 100px;
+}
+
+.testimonials-section h4 {
+    color: rgb(197, 53, 55);
+}
+
+.testimonials-section p {
+    width: 90%;
+    margin: 5px auto;
+    color: rgb(27, 62, 65);
+}
