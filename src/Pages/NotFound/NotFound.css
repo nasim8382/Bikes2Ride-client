@@ -1,0 +1,11 @@
+.link-style {
+    text-decoration: none;
+    color: white;
+}
+
+.or_line {
+    width: 50px;
+    height: 3px;
+    background-color: rgb(27, 62, 65);
+    margin: 0 20px;
+}

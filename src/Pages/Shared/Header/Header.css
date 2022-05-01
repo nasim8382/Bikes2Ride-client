@@ -9,3 +9,7 @@
     background-color: rgb(197, 53, 55) !important;
     transition: 0.3s !important;
 }
+
+.bg-dark {
+    background-color: rgb(27, 62, 65) !important;
+}
