@@ -16,7 +16,7 @@ const About = () => {
                 <h1 className='section-header-title'>
                     <Typewriter
                         onInit={(typewriter) => {
-                            typewriter.typeString("About Us").start();
+                            typewriter.typeString("Know About Us").start();
                         }}
                     />
                 </h1>
