@@ -1,9 +1,7 @@
 .advantages-section {
-    background-image: url("../../../images//bg.jpg");
+    background-color: rgb(27, 62, 65);
     margin-top: 100px;
     margin-bottom: 100px;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .advantage-header {
@@ -17,6 +15,12 @@
 .advantage-header-title {
     font-size: 50px;
     color: aliceblue;
+}
+
+.advantage-icons {
+    color: bisque;
+    font-size: 40px;
+    margin-left: 20%;
 }
 
 .advantage-text h3 {
