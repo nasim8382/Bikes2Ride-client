@@ -10,10 +10,12 @@ import { BsFacebook } from "react-icons/bs";
 import { BsInstagram } from "react-icons/bs";
 import { BsTwitter } from "react-icons/bs";
 import { SiYoutube } from "react-icons/si";
+import PageTitle from '../Shared/PageTitle/PageTitle';
 
 const Contact = () => {
     return (
         <div>
+            <PageTitle title="Contact"></PageTitle>
             <div className='d-flex align-items-center justify-content-center my-5'>
                 <div className='straight-line'></div>
                 <h1 className='section-header-title'>

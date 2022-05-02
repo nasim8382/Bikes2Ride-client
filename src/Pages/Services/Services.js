@@ -5,10 +5,12 @@ import service1 from '../../images/services/repair.jpg';
 import service2 from '../../images/services/fitting.jpg';
 import service3 from '../../images/services/rental.jpg';
 import { Link } from 'react-router-dom';
+import PageTitle from '../Shared/PageTitle/PageTitle';
 
 const Services = () => {
     return (
         <div className='container'>
+            <PageTitle title="Services"></PageTitle>
             <div className='d-flex align-items-center justify-content-center my-5'>
                 <div className='straight-line'></div>
                 <h1 className='section-header-title'>

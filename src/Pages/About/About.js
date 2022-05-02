@@ -7,10 +7,12 @@ import testimonial2 from '../../images/testimonials/testimonials2.jpg';
 import testimonial3 from '../../images/testimonials/testimonials3.jpg';
 
 import './About.css';
+import PageTitle from '../Shared/PageTitle/PageTitle';
 
 const About = () => {
     return (
         <div>
+            <PageTitle title="About"></PageTitle>
             <div className='d-flex align-items-center justify-content-center my-5'>
                 <div className='straight-line'></div>
                 <h1 className='section-header-title'>

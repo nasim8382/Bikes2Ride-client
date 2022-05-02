@@ -1,6 +1,7 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import Typewriter from 'typewriter-effect';
+import PageTitle from '../Shared/PageTitle/PageTitle';
 import './AddItems.css';
 
 const AddItems = () => {
@@ -9,6 +10,7 @@ const AddItems = () => {
 
     return (
         <div className='add-items-section'>
+            <PageTitle title="Add-Items"></PageTitle>
             <div className='d-flex align-items-center justify-content-center my-4'>
                 <div className='straight-line'></div>
                 <h1 className='section-header-title'>

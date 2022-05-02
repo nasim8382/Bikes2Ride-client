@@ -1,4 +1,5 @@
 import React from 'react';
+import PageTitle from '../../Shared/PageTitle/PageTitle';
 import Advantages from '../Advantages/Advantages';
 import AdventureBikes from '../AdventureBikes/AdventureBikes';
 import BikeCatagories from '../BikeCatagories/BikeCatagories';
@@ -9,6 +10,7 @@ import Upgrade from '../Upgrade/Upgrade';
 const Home = () => {
     return (
         <div>
+            <PageTitle title="Home"></PageTitle>
             <Advantages></Advantages>
             <SpecialBicycle></SpecialBicycle>
             <AdventureBikes></AdventureBikes>

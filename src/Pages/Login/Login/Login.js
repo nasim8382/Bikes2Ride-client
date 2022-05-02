@@ -8,6 +8,7 @@ import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-
 import auth from '../../../firebase.init';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import PageTitle from '../../Shared/PageTitle/PageTitle';
 
 const Login = () => {
     const emailRef = useRef('');
@@ -61,6 +62,7 @@ const Login = () => {
 
     return (
         <div className='sign-up-section'>
+            <PageTitle title="Sign-In"></PageTitle>
             <div className='d-flex align-items-center justify-content-center mt-4 mb-5'>
                 <div className='straight-line'></div>
                 <h1 className='section-header-title'>

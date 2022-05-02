@@ -7,6 +7,7 @@ import SocialLogin from '../SocialLogin/SocialLogin';
 import spinner from '../../../images/spinner.gif';
 import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
+import PageTitle from '../../Shared/PageTitle/PageTitle';
 
 const SignUp = () => {
     const location = useLocation();
@@ -63,6 +64,7 @@ const SignUp = () => {
 
     return (
         <div  className='sign-up-section'>
+            <PageTitle title="Sign-Up"></PageTitle>
             <div className='d-flex align-items-center justify-content-center mt-4 mb-5'>
                 <div className='straight-line'></div>
                 <h1 className='section-header-title'>
