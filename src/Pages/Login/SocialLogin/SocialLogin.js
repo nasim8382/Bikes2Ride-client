@@ -5,7 +5,7 @@ import './SocialLogin.css';
 import auth from '../../../firebase.init';
 import { useSignInWithFacebook, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { useLocation, useNavigate } from 'react-router-dom';
-import spinner from '../../../images/spinner.gif';
+import spinner from '../../../images/loader.gif';
 
 const SocialLogin = () => {
     const location = useLocation();
@@ -41,7 +41,7 @@ const SocialLogin = () => {
     }, [googleUser, fbUser]);
 
     if (googleLoading || fbLoading) {
-        loadingText = <img className='spinner' src={spinner} alt="spinner" />
+        loadingText = <img className='loader' src={spinner} alt="spinner" />
     }
 
     return (

@@ -93,3 +93,9 @@
 .signup-or-text {
     color: rgb(27, 62, 65);
 }
+
+.spinner {
+    display: block;
+    height: 40px;
+    margin: 0 auto;
+}

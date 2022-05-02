@@ -7,8 +7,7 @@ import { Navigate, useLocation } from "react-router-dom";
 import auth from "../../../firebase.init";
 import "./RequireAuth.css";
 import Typewriter from 'typewriter-effect';
-import { Spinner } from 'react-bootstrap';
-// import { toast, ToastContainer } from "react-toastify";
+import spinnerImg from '../../../images/spinner1.gif';
 
 const RequireAuth = ({ children }) => {
   const location = useLocation();
@@ -16,9 +15,7 @@ const RequireAuth = ({ children }) => {
   const [sendEmailVerification, sending] = useSendEmailVerification(auth);
 
   if (loading || sending) {
-    return <div style={{height: '765px'}} className='w-100 d-flex justify-content-center align-items-center'>
-    <Spinner animation="border" variant="warning" />
-</div>
+    return <img className="img-fluid spinner-img mx-auto d-block" src={spinnerImg} alt="" />
   }
 
   if (!user) {
@@ -44,11 +41,10 @@ const RequireAuth = ({ children }) => {
             className="btn all-btn verify-btn"
             onClick={async () => {
               await sendEmailVerification();
-              alert("Sent email");
+              alert("Your Email is Sent");
             }}
           >Send Verification Email Again</button>
         </div>
-        {/* <ToastContainer></ToastContainer> */}
       </div>
   }
 
