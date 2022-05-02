@@ -30,11 +30,15 @@ const Header = () => {
             </Nav>
 
             <Nav>
-                <NavDropdown className="dropdown-title" title="Inventories" id="collasible-nav-dropdown">
-                  <Link className="ps-2 dropdown_item" to="manageitems">Manage</Link>
-                  <Link className="ps-2 dropdown_item" to="additems">Add Items</Link>
-                  <Link className="ps-2 dropdown_item" to="myitems">My Items</Link>
-                </NavDropdown>
+                {
+                  user && <>
+                    <NavDropdown className="dropdown-title" title="Inventories" id="collasible-nav-dropdown">
+                      <Link className="ps-2 dropdown_item" to="manageitems">Manage</Link>
+                      <Link className="ps-2 dropdown_item" to="additems">Add Items</Link>
+                      <Link className="ps-2 dropdown_item" to="myitems">My Items</Link>
+                    </NavDropdown>
+                  </>
+                }
             </Nav>
 
             <Nav>
