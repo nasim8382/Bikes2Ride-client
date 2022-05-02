@@ -35,7 +35,6 @@ const Header = () => {
               <CustomLink className="me-1 nav-link-item" to="team">Team</CustomLink>
               <CustomLink className="me-1 nav-link-item" to="contact">Contact</CustomLink>
               <CustomLink className="me-1 nav-link-item" to="login">Sign In</CustomLink>
-              <CustomLink className="me-1 nav-link-item" to="signup">Sign Up</CustomLink>
             </Nav>
           </Navbar.Collapse>
         </Container>

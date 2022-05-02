@@ -1,0 +1,14 @@
+.reset-password {
+    font-size: 18px;
+    color: rgb(197, 53, 55);
+    cursor: pointer;
+}
+
+.reset-password:hover {
+    color: rgb(27, 62, 65);
+}
+
+.login-header-title {
+    color: rgb(27, 62, 65);
+}
+

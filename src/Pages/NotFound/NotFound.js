@@ -5,7 +5,7 @@ import './NotFound.css';
 
 const NotFound = () => {
     return (
-        <div>
+        <div className='notfound-section'>
             <img className='w-100 img-fluid' src={notFound} alt="" />
             <div className='d-flex justify-content-center align-items-center mt-5'>
                     <Link to="/home" className='link-style'>

@@ -15,6 +15,7 @@
 .contact-icons {
     color: rgb(197, 53, 55);
     font-size: 30px;
+    cursor: pointer;
 }
 
 .contact-social-icons:hover {

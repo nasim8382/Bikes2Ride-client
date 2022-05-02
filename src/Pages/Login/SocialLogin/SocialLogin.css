@@ -1,0 +1,23 @@
+.social-login p {
+    margin-top: 15px;
+}
+
+.social-login {
+    display: block;
+    width: 175px;
+    height: 50px;
+    text-transform: uppercase;
+    border: none;
+    background-color: rgb(27, 62, 65);
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-shadow: inset 0 0 0 0 rgb(197, 53, 55);
+    transition: ease-out 0.3s;
+    outline: none;
+    border-radius: 5px;
+}
+
+.social-login:hover {
+    box-shadow: inset 175px 0 0 0 rgb(197, 53, 55);
+}

@@ -16,12 +16,13 @@ const Footer = () => {
                     <div className="col-6">
                         <h2 className='text-center newsletter-title'>Join Our NewsLetter</h2>
                     </div>
-                    <div className="col-6">
+                    <div className="col-6 d-flex align-items-center">
                             <input className='footer-input' type="email" placeholder='Input Your Email' />
                             <button className='all-btn mt-4'>Subscribe Now</button>
                     </div>
                 </div>
             </div>
+
             <div className="container footer-text">
                 <div className="row">
                     <div className="col-4">
@@ -60,10 +61,10 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-
             <div className='copywrite-text'>
-                <p className='text-center text-white'> &copy;{new Date().getFullYear()} - Bikes<span style={{color: 'rgb(197, 53, 55)'}}>2</span>Ride, All Rights Reserved.</p>
-            </div>
+                    <p className='text-center text-white'> &copy;{new Date().getFullYear()} - Bikes<span style={{color: 'rgb(197, 53, 55)'}}>2</span>Ride, All Rights Reserved.</p>
+                </div>
+
         </div>
     );
 };

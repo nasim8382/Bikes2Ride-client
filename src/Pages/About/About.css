@@ -33,7 +33,7 @@
 .history-section {
     margin-top: 150px;
     margin-bottom: 100px;
-    background-color: rgb(27, 62, 65);
+    background: linear-gradient(rgb(60, 61, 49), rgb(27, 62, 65));
 }
 
 .history-title {

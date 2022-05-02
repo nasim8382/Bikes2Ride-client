@@ -7,10 +7,10 @@
 
 .newsletter-section {
     position: absolute;
-    width: 60%;
+    width: 70%;
     height: 100px;
-    background-color: rgb(27, 62, 65);
-    top: -15%;
+    background: linear-gradient(black, rgb(27, 62, 65));
+    top: -13%;
     left: 20%;
 }
 
@@ -22,17 +22,19 @@
 
 .footer-input {
     width: 50%;
-    height: 58px;
+    height: 61px;
+    margin-top: 23px;
+    border-radius: 5px;
 }
 
-::placeholder {
+.footer-input::placeholder {
     color: rgb(255, 40, 91);
     padding-left: 30px;
 }
 
 .footer-text {
-    padding-top: 60px;
-    padding-bottom: 150px;
+    padding-top: 100px;
+    padding-bottom: 40px;
 }
 
 .footer-logo-image {
@@ -47,6 +49,7 @@
 .footer-social-icons {
     color: rgb(245, 234, 221);
     font-size: 30px;
+    cursor: pointer;
 }
 
 .footer-social-icons:hover {

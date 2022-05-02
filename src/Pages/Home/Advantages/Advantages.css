@@ -1,5 +1,5 @@
 .advantages-section {
-    background-color: rgb(27, 62, 65);
+    background: linear-gradient(black, rgb(27, 62, 65));
     margin-top: 100px;
     margin-bottom: 100px;
 }
