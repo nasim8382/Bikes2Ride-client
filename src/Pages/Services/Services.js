@@ -24,7 +24,7 @@ const Services = () => {
 
             <div className='row service-section  service-section-first'>
                 <div className="col-6">
-                    <img className='img-fluid w-100' src={service1} alt="" />
+                    <img className='img-fluid w-100 img-hover' src={service1} alt="" />
                 </div>
                 <div className="col-6 my-auto">
                     <div className='d-flex align-items-center my-5 history-title'>
@@ -50,13 +50,13 @@ const Services = () => {
                     </Link>
                 </div>
                 <div className="col-6">
-                    <img className='img-fluid w-100' src={service2} alt="" />
+                    <img className='img-fluid w-100 img-hover' src={service2} alt="" />
                 </div>
             </div>
 
             <div className='row service-section service-section-third'>
                 <div className="col-6">
-                    <img className='img-fluid w-100' src={service3} alt="" />
+                    <img className='img-fluid w-100 img-hover' src={service3} alt="" />
                 </div>
                 <div className="col-6 my-auto">
                     <div className='d-flex align-items-center my-5 history-title'>

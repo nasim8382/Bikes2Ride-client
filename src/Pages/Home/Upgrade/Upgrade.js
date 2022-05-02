@@ -18,7 +18,7 @@ const Upgrade = () => {
                     </Link>
                 </div>
                 <div className="col-6">
-                    <img className='img-fluid' src={upgrade} alt="" />
+                    <img className='img-fluid img-hover' src={upgrade} alt="" />
                 </div>
             </div>
         </div>

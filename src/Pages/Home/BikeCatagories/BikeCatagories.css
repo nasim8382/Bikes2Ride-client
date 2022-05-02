@@ -24,6 +24,12 @@
     width: 100%;
 }
 
+.image:hover {
+    transform: scale(1.2);
+    transition: 0.4s;
+    z-index: 2;
+}
+
 .image_overlay {
     position: absolute;
     top: 0;
