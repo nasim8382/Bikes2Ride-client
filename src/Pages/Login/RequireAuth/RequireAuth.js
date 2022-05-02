@@ -8,6 +8,8 @@ import auth from "../../../firebase.init";
 import "./RequireAuth.css";
 import Typewriter from 'typewriter-effect';
 import spinnerImg from '../../../images/spinner1.gif';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const RequireAuth = ({ children }) => {
   const location = useLocation();
@@ -41,9 +43,10 @@ const RequireAuth = ({ children }) => {
             className="btn all-btn verify-btn"
             onClick={async () => {
               await sendEmailVerification();
-              alert("Your Email is Sent");
+              toast.success('Successfully sent your email');
             }}
           >Send Verification Email Again</button>
+          <ToastContainer position="top-center" />
         </div>
       </div>
   }
