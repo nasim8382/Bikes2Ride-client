@@ -21,3 +21,9 @@
 .social-login:hover {
     box-shadow: inset 175px 0 0 0 rgb(197, 53, 55);
 }
+
+.spinner {
+    display: block;
+    height: 50px;
+    margin: 0 auto;
+}

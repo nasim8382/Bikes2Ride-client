@@ -14,6 +14,7 @@ import AddItems from './Pages/AddItems/AddItems';
 import MyItems from './Pages/MyItems/MyItems';
 import SignUp from './Pages/Login/SignUp/SignUp';
 import Footer from './Pages/Shared/Footer/Footer';
+import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
 
 function App() {
   return (
@@ -23,7 +24,11 @@ function App() {
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/home" element={<Home></Home>}></Route>
         <Route path="/manageitems" element={<ManageItems></ManageItems>}></Route>
-        <Route path="/additems" element={<AddItems></AddItems>}></Route>
+        <Route path="/additems" element={
+          <RequireAuth>
+            <AddItems></AddItems>
+          </RequireAuth>
+        }></Route>
         <Route path="/myitems" element={<MyItems></MyItems>}></Route>
         <Route path="/blogs" element={<Blogs></Blogs>}></Route>
         <Route path="/services" element={<Services></Services>}></Route>

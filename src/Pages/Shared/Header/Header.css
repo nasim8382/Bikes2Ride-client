@@ -40,3 +40,25 @@
     color: rgb(255, 40, 91) !important;
     transition: ease-in 0.2s;
 }
+
+.sign-out-btn {
+    border: none;
+    margin-top: -7px;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 5px 15px;
+    text-decoration: none;
+}
+
+.sign-out-btn:hover{
+    padding: 5px 15px;
+    background-color: rgb(197, 53, 55);
+    transition: 0.3s;
+}
+
+/* @media only screen and (max-width: 992px){
+    .sign-out-btn {
+        display: inline-flex;
+        margin-left: -12px;
+    }
+} */

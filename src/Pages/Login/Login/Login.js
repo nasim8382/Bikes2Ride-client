@@ -34,7 +34,7 @@ const Login = () => {
                             </div>
 
                             <form onSubmit={handleSubmit(onSubmit)}>
-                                <input placeholder="Email Address" className="mt-4 mb-4 signup-input" type="email" {...register("email")} />
+                                <input placeholder="Email Address" className="mt-5 mb-4 signup-input" type="email" {...register("email")} />
                                 <input placeholder="Your Password" className="mb-4 signup-input" type="password" {...register("password")} />
                                 <input className='submit-style mx-auto' type="submit" value="Login" />
                             </form>

@@ -9,7 +9,7 @@
 
 .form-bg-sign-up {
     width: 500px;
-    height: 600px;
+    height: 630px;
     background-color: rgb(27, 62, 65);
     border-radius: 10px;
     margin: 0 auto;  
@@ -17,7 +17,7 @@
 
 .form-container-sign-up {
     width: 500px;
-    height: 600px;
+    height: 630px;
     background-image: url("../../../images//bg.jpg");
     border: 1px solid #95A0A7;
     box-sizing: border-box;
@@ -25,9 +25,12 @@
     transform: translate(15px, 15px);
 }
 
-.signup-label {
-    font-size: 18px;
+.red {
     color: rgb(197, 53, 55);
+}
+
+.green {
+    color: rgb(27, 62, 65);
 }
 
 .signup-input {

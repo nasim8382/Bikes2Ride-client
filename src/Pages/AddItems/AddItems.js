@@ -1,5 +1,6 @@
 import React from 'react';
 import Typewriter from 'typewriter-effect';
+import './AddItems.css';
 
 const AddItems = () => {
     return (
@@ -13,6 +14,9 @@ const AddItems = () => {
                         }}
                     />
                 </h1>
+            </div>
+            <div className='add-items'>
+                <h1>Add your items</h1>
             </div>
         </div>
     );
