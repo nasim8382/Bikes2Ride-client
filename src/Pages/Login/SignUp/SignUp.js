@@ -2,19 +2,21 @@ import React, { useState } from 'react';
 import Typewriter from 'typewriter-effect';
 import { useForm } from "react-hook-form";
 import './SignUp.css';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import spinner from '../../../images/spinner.gif';
 import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 
 const SignUp = () => {
+    const location = useLocation();
     const { register, handleSubmit } = useForm();
     const [agree, setAgree] = useState(false);
     const [error, setError] = useState('');
     const navigate = useNavigate();
 
     let loadingElement;
+    let from = location.state?.from?.pathname || "/";
 
     const [
         createUserWithEmailAndPassword,
@@ -55,7 +57,7 @@ const SignUp = () => {
 
         await createUserWithEmailAndPassword(email, password);
         await updateProfile({ displayName: name });
-        navigate('/home');
+        navigate(from, { replace: true });
 
     };
 

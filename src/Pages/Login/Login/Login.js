@@ -1,13 +1,63 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { useForm } from "react-hook-form";
+import React, { useRef} from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Typewriter from 'typewriter-effect';
 import './Login.css';
 import SocialLogin from '../SocialLogin/SocialLogin';
+import spinner from '../../../images/spinner.gif';
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import auth from '../../../firebase.init';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
-    const { register, handleSubmit } = useForm();
-    const onSubmit = data => console.log(data);
+    const emailRef = useRef('');
+    const navigate = useNavigate();
+    const location = useLocation();
+
+    let from = location.state?.from?.pathname || "/";
+    let errorElement;
+    let loadingElement;
+
+    const [
+        signInWithEmailAndPassword,
+        user,
+        loading,
+        error
+    ] = useSignInWithEmailAndPassword(auth);
+
+    const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
+
+    if (loading || sending) {
+        loadingElement = <img className='spinner' src={spinner} alt="spinner" />;
+    }
+
+    if (error) {
+        errorElement =  <p className='text-center text-danger mt-2'>Error: {error?.message}</p>
+    }
+
+    if (user) {
+        navigate(from, { replace: true });
+    }
+
+    const handleSubmit = e => {
+        e.preventDefault();
+        const email = e.target.email.value;
+        const password = e.target.password.value;
+
+        signInWithEmailAndPassword(email, password);
+    }
+
+    const resetPassword = async() => {
+        const email = emailRef.current.value;
+        console.log(email);
+        if (email) {
+            await sendPasswordResetEmail(email);
+            toast.success('Successfully sent reset link to your email');
+        }
+        else {
+            toast.error('Please enter your email address');
+        }
+    }
 
     return (
         <div className='sign-up-section'>
@@ -33,9 +83,11 @@ const Login = () => {
                                 <h1 className='login-header-title'>Welcome You</h1>
                             </div>
 
-                            <form onSubmit={handleSubmit(onSubmit)}>
-                                <input placeholder="Email Address" className="mt-5 mb-4 signup-input" type="email" {...register("email")} />
-                                <input placeholder="Your Password" className="mb-4 signup-input" type="password" {...register("password")} />
+                            <form onSubmit={handleSubmit}>
+                                <input ref={emailRef} placeholder="Email Address" className="mt-5 mb-4 signup-input" type="email" name="email" required/>
+                                <input placeholder="Your Password" className="mb-4 signup-input" type="password" name="password" required/>
+                                {errorElement}
+                                {loadingElement}
                                 <input className='submit-style mx-auto' type="submit" value="Login" />
                             </form>
 
@@ -43,7 +95,7 @@ const Login = () => {
                                 <Link to='/signup' className="text-decoration-none login-link"> Create One</Link>
                             </p>
 
-                            <p className='text-center reset-password'>Lost Your Password?</p>
+                            <p onClick={resetPassword} className='text-center reset-password'>Lost Your Password?</p>
 
                             <div className='d-flex justify-content-center align-items-center'>
                                 <div className='signup-or-line'></div>
@@ -52,7 +104,7 @@ const Login = () => {
                             </div>
 
                             <SocialLogin></SocialLogin>
-
+                            <ToastContainer position="top-center" />
                             </div>
                         </div>
                     </div>

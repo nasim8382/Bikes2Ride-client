@@ -1,3 +1,8 @@
-.add-items {
-    padding: 200px;
+.add-items-section {
+    background-image: url("../../images/add.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 220px;
+    padding-top: 30px;
 }
