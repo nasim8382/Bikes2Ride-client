@@ -1,33 +1,22 @@
 import React from 'react';
-import PageTitle from '../Shared/PageTitle/PageTitle';
-import Typewriter from 'typewriter-effect';
-import useProducts from '../../hooks/useProducts';
-import './AllProducts.css';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import useProducts from '../../../hooks/useProducts';
 
-const AllProducts = () => {
+const Inventories = () => {
     const [products] = useProducts();
     const navigate = useNavigate();
+    const sixProducts = products.slice(0, 6);
 
     return (
         <div>
-            <PageTitle title="All-Products"></PageTitle>
-            <div className='products-section'>
-            <div className='d-flex align-items-center justify-content-center mt-5 mb-4'>
+            <div className='d-flex align-items-center justify-content-center my-5'>
                 <div className='straight-line'></div>
-                <h1 className='section-header-title'>
-                    <Typewriter
-                        onInit={(typewriter) => {
-                            typewriter.typeString("All Products").start();
-                        }}
-                    />
-                </h1>
+                <h1 className='section-header-title'>Inventories</h1>
             </div>
-            <h2 className='text-center green mb-5'>Total : {products.length}</h2>
             <div className="container">
-                <div className='products-div'>
+            <div className='products-div'>
                 {
-                    products.map(product => 
+                    sixProducts.map(product => 
                         <div key={product._id}className="product shadow">
                             <img src={product.image} className="img-fluid" alt="product" />
                             <div className='d-flex justify-content-center align-items-center'>
@@ -51,20 +40,10 @@ const AllProducts = () => {
                     )
                 }
                 </div>
-                <div className='d-flex align-items center justify-content-center'>
-                    <Link to="/manageitems" className='link-style'>
-                        <button className='all-btn mt-4 me-5'>Manage Inventory</button>
-                    </Link>
-                    <Link to="/additems" className='link-style'>
-                        <button className='all-btn mt-4'>Add New Items</button>
-                    </Link>
-                </div>
             </div>
-            </div>
-
-
+            <button onClick={ () => navigate('/manageitems')} className='all-btn my-5 mx-auto d-block'>Manage Inventory</button>
         </div>
     );
 };
 
-export default AllProducts;
+export default Inventories;

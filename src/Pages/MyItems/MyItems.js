@@ -21,8 +21,8 @@ const MyItems = () => {
             <div className='my-items-section'>
                 <div className='container'>
                     <div className='d-flex align-items-center items-div mx-auto shadow-lg'>
-                        <img className='my-items-img me-3' src="https://i.ibb.co/ZMW3Yzx/05.jpg" alt="" />
-                        <h2 className='me-5 green items-header'>OUTRAGE 605 BLACK ORANGE</h2>
+                        <img className='my-items-img me-4' src="https://i.ibb.co/ZMW3Yzx/05.jpg" alt="" />
+                        <h2 className='me-5 green items-header'>OUTRAGE 605 BLACK </h2>
                         <h2 className='me-4 green'>$888</h2>
                         <button className='delete-button'>
                             <RiChatDeleteLine/>
