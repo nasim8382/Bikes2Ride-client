@@ -27,6 +27,9 @@
 
 .cover h1 {
     font-size: 60px;
+    text-transform: uppercase;
+    position: relative;
+    animation: text 2s 1;
 }
 
 .cover p {
@@ -39,7 +42,7 @@
 
 .header-content {
     position: relative;
-    padding: 44px 55px;
+    padding: 40px 55px;
 }
 
 .line {
@@ -52,6 +55,12 @@
     position: absolute;
     border: 9px solid white;
     clip-path: polygon(0 0, 47% 0, 25% 100%, 0% 100%);
+}
+
+@keyframes text {
+    0%{
+        margin-bottom: -60px;
+    }
 }
 
 @media only screen and (max-width: 576px){
