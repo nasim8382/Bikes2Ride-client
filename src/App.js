@@ -15,6 +15,8 @@ import MyItems from './Pages/MyItems/MyItems';
 import SignUp from './Pages/Login/SignUp/SignUp';
 import Footer from './Pages/Shared/Footer/Footer';
 import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
+import AllProducts from './Pages/AllProducts/AllProducts';
+import UpdateStock from './Pages/UpdateStock/UpdateStock';
 
 function App() {
   return (
@@ -23,6 +25,12 @@ function App() {
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/home" element={<Home></Home>}></Route>
+        <Route path="/allproducts" element={<AllProducts></AllProducts>}></Route>
+        <Route path="/updatestock/:id" element={
+          <RequireAuth>
+            <UpdateStock></UpdateStock>
+          </RequireAuth>
+        }></Route>
         <Route path="/manageitems" element={
           <RequireAuth>
             <ManageItems></ManageItems>

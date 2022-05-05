@@ -6,3 +6,21 @@
     padding-bottom: 220px;
     padding-top: 30px;
 }
+
+.add-bg {
+    width: 500px;
+    height: 700px;
+    background-color: rgb(27, 62, 65);
+    border-radius: 10px;
+    margin: 0 auto;  
+}
+
+.add-form {
+    width: 500px;
+    height: 700px;
+    background-image: url("../../images//bg.jpg");
+    border: 1px solid #95A0A7;
+    box-sizing: border-box;
+    border-radius: 10px;
+    transform: translate(15px, 15px);
+}

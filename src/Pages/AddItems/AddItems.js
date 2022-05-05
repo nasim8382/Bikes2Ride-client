@@ -24,8 +24,8 @@ const AddItems = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-7">
-                        <div className='form-bg-sign-up'>
-                            <div className='form-container-sign-up'>
+                        <div className='add-bg'>
+                            <div className='add-form'>
 
                             <div className='d-flex align-items-center justify-content-center mt-5'>
                                 <div className='straight-line'></div>
@@ -35,6 +35,7 @@ const AddItems = () => {
                             <form onSubmit={handleSubmit(onSubmit)}>
                                 <input placeholder="Product Name" className="mt-3 mb-4 signup-input" {...register("name", { required: true, maxLength: 20 })} required/>
                                 <input placeholder="Product URL" className="mb-4 signup-input" type="text" {...register("image")} required/>
+                                <input placeholder="Product Category" className="mb-4 signup-input" type="text" {...register("category")} required/>
                                 <input placeholder="Product Description" className="mb-4 signup-input" type="text" {...register("description")} required/>
                                 <input placeholder="Product Supplier Name" className="mb-4 signup-input" type="text" {...register("supplier_name")} required/>
                                 <input placeholder="Product Price" className="mb-4 signup-input" type="text" {...register("price")} required/>

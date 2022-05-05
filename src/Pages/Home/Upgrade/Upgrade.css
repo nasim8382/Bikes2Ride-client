@@ -4,8 +4,7 @@
 }
 
 .all-btn {
-    width: 200px;
-    height: 60px;
+    padding: 7px 20px;
     font-size: 1.3rem;
     text-transform: uppercase;
     color: white;

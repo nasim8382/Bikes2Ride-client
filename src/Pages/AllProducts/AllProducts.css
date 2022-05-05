@@ -1,0 +1,32 @@
+.products-section {
+    padding-bottom: 200px;
+}
+
+.products-div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    padding-bottom: 50px;
+}
+
+.product {
+    border: 1px solid rgb(197, 53, 55);
+    padding: 0 20px;
+    border-radius: 5px;
+}
+
+.product-line {
+    height: 1px;
+    width: 35%;
+    background-color: rgb(27, 62, 65);
+}
+
+.category-text {
+    color: white;
+    background-color: rgb(27, 62, 65);
+    padding: 3px 8px;
+}
+
+.product-description {
+    color: gray;
+}

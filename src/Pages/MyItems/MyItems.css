@@ -1,0 +1,33 @@
+.my-items-section {
+    padding-top: 20px;
+    padding-bottom: 400px;
+}
+
+.items-div {
+    width: 820px;
+    border: 2px solid rgb(27, 62, 65);
+    border-radius: 5px 25px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.items-header {
+    width: 380px;
+}
+
+.my-items-img {
+    height: 120px;
+}
+
+.delete-button {
+    color: rgb(197, 53, 55);
+    margin-top: -15px;
+    font-size: 40px;
+    border: none;
+    background-color: white;
+}
+
+.delete-button:hover {
+    color: rgb(27, 62, 65);
+    transition: 0.3s;
+}
