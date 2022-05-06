@@ -1,6 +1,6 @@
 .form-bg-login {
     width: 500px;
-    height: 610px;
+    height: 640px;
     background-color: rgb(27, 62, 65);
     border-radius: 10px;
     margin: 0 auto;  
@@ -8,7 +8,7 @@
 
 .form-container-login {
     width: 500px;
-    height: 610px;
+    height: 640px;
     background-image: url("../../../images//bg.jpg");
     border: 1px solid #95A0A7;
     box-sizing: border-box;
@@ -33,12 +33,12 @@
 @media only screen and (max-width: 576px) {
     .form-bg-login {
         width: 300px;
-        height: 620px;
+        height: 700px;
     }
     
     .form-container-login {
         width: 300px;
-        height: 620px;
+        height: 700px;
     }
 }
 

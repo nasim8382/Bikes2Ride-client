@@ -34,3 +34,24 @@
     width: 270px;
     margin: 20px auto;
 }
+
+@media only screen and (max-width: 576px) {
+    .advantages-section {
+        width: 95%;
+        padding-bottom: 50px;
+        margin: 100px auto;
+        border-radius: 5px;
+    }
+
+    .advantage-header-title {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+    .advantages-section {
+        width: 95%;
+        padding-bottom: 50px;
+        margin: 100px auto;
+    }
+}

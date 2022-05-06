@@ -51,3 +51,15 @@
     background-color: rgb(197, 53, 55);
     transition: 0.3s;
 }
+
+@media only screen and (max-width: 576px) {
+    .sign-out-btn {
+        margin-left: -255px;
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+    .sign-out-btn {
+        margin-left: -600px;
+    }
+}

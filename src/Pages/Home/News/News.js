@@ -8,23 +8,23 @@ const News = () => {
     return (
         <div className='news-section'>
             <div className='d-flex align-items-center justify-content-center my-5'>
-                <div className='straight-line'></div>
-                <h1 className='section-header-title'>Latest News</h1>
+                <div className='news-straight-line'></div>
+                <h1 className='news-header'>Latest News</h1>
             </div>
             <div className="row">
-                <div className="col-4">
+                <div className="col-12 col-lg-4 news-div">
                     <img className='img-fluid rounded img-hover' src={news1} alt="" />
                     <h6>1 day ago by Joyce Contreras</h6>
                     <h2>Rent a Bike Touring Bikes</h2>
                     <p>Our new touring bikes have had rave reviews. They have been successfully ridden all over the BD, covering hundreds of kilometres.</p>
                 </div>
-                <div className="col-4">
+                <div className="col-12 col-lg-4 news-div">
                     <img className='img-fluid rounded img-hover' src={news2} alt="" />
                     <h6>2 days ago by Dan Newman</h6>
                     <h2>Long-distance Bike Tours</h2>
                     <p>In this article, our regular customers tell about their experience and impression they got from our newest long-distance bike tours.</p>
                 </div>
-                <div className="col-4">
+                <div className="col-12 col-lg-4 news-div">
                     <img className='img-fluid rounded img-hover' src={news3} alt="" />
                     <h6>2 days ago by Laura Wallace</h6>
                     <h2>5 Reasons to Take the Bike</h2>

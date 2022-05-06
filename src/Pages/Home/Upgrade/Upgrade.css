@@ -47,3 +47,43 @@
     transform: scale(1.2);
     transition: 0.4s;
 }
+
+.upgrade-straight-line {
+    width: 50px;
+    height: 3px;
+    background-color: rgb(255, 40, 91);
+    margin-top: -80px;
+    margin-right: -50px;
+    position: absolute;
+}
+
+.upgrade-header {
+    font-size: 50px;
+    color: rgb(27, 62, 65);
+    position: relative;
+}
+
+@media only screen and (max-width: 576px) {
+    .upgrade-header {
+        font-size: 40px;
+    }
+
+    .upgrade-straight-line {
+        margin-top: -120px;
+        margin-right: -60px;
+    }
+
+    .upgrade-text {
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+    .upgrade-img {
+        margin: auto 0;
+    }
+
+    .upgrade-straight-line {
+        margin-top: -150px;
+    }
+}

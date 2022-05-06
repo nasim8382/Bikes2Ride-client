@@ -64,8 +64,21 @@
 }
 
 @media only screen and (max-width: 576px){
-    .carousel-image{
-        width: auto;
-        height: 600px;
+    .cover {
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .line {
+        clip-path: polygon(0 0, 85% 0, 50% 100%, 0% 100%);
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 992px){
+    .cover {
+        background: rgba(0, 0, 0, 0.5);
+    }
+    
+    .line {
+        clip-path: polygon(0 0, 70% 0, 35% 100%, 0% 100%);
     }
 }

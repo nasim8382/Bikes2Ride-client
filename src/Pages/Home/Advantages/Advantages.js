@@ -11,10 +11,10 @@ const Advantages = () => {
         <div className='advantages-section'>
             <div className='container'>
                 <div className='row'>
-                    <div className='col-6'>
+                    <div className='col-12 col-lg-6'>
                         <img className='img-fluid py-5' src={cycle} alt="" />
                     </div>
-                    <div className="col-6 my-auto advantage-text">
+                    <div className="col-12 col-lg-6 my-auto advantage-text">
                         <div className='d-flex align-items-center mb-3 advantage-header'>
                             <div className='straight-line'></div>
                             <h1 className='advantage-header-title'>
@@ -22,14 +22,14 @@ const Advantages = () => {
                             </h1>
                         </div>
                         <div className='row'>
-                            <div className="col-6">
+                            <div className="col-12 col-md-6">
                                 <span className='advantage-icons'>
                                     <AiOutlinePercentage/>
                                 </span>
                                 <h3>Low Prices</h3>
                                 <p>We provide affordable prices for buying bikes.</p>
                             </div>
-                            <div className="col-6">
+                            <div className="col-12 col-md-6">
                                 <span className='advantage-icons'>
                                     <BsBicycle/>
                                 </span>
@@ -38,14 +38,14 @@ const Advantages = () => {
                             </div>
                         </div>
                         <div className="row">
-                            <div className="col-6">
+                            <div className="col-12 col-md-6">
                                 <span className='advantage-icons'>
                                     <RiMessage2Line/>
                                 </span>
                                 <h3>Good Support</h3>
                                 <p>Pick up and return bicycle at our spot easily.</p>
                             </div>
-                            <div className="col-6">
+                            <div className="col-12 col-md-6">
                                 <span className='advantage-icons'>
                                     <MdLocationOn/>
                                 </span>

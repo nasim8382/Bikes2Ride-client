@@ -64,7 +64,7 @@
 
 @media only screen and (max-width: 576px) {
     .newsletter-section {
-        height: 320px;
+        height: 300px;
         top: -10%;
         left: 14%;
     }
@@ -78,7 +78,7 @@
     }
 
     .footer-social {
-        padding-top: 170px;
+        padding-top: 150px;
         padding-bottom: 40px;
         padding-left: 50px;
     }
