@@ -40,7 +40,7 @@ const Inventories = () => {
                             <h4 className='mb-3 ms-4'>
                             Quantity: <span className='green'>{product.quantity}</span>
                             </h4>
-                            <button className='all-btn mt-4 mx-auto d-block mb-4' onClick={ () => navigate(`/updatestock/${product._id}`)}>Stock Update</button>
+                            <button className='all-btn mt-4 mx-auto d-block mb-4' onClick={ () => navigate(`/inventory/${product._id}`)}>Stock Update</button>
                         </div>
                     )
                 }

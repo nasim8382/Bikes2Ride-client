@@ -30,10 +30,10 @@ const ManageItems = () => {
           <Table bordered hover>
             <thead>
               <tr className="text-center">
-                <th>Image</th>
-                <th className="text-start ps-5">Product Name</th>
-                <th>Price</th>
-                <th>Quantity</th>
+                <th className="small-device">Image</th>
+                <th className="text-start product-name">Name</th>
+                <th className="small-device">Price</th>
+                <th>Total</th>
                 <th>Stock Update</th>
                 <th>Remove</th>
               </tr>
@@ -42,11 +42,11 @@ const ManageItems = () => {
                 {
                     products.map( product => (
                         <tr className="text-center" key={product._id}>
-                            <td>
+                            <td className="small-device">
                                 <img className="table-img" height={50} src={product.image} alt="" />
                             </td>
-                            <td className="text-start ps-5">{product.name}</td>
-                            <td>${product.price}</td>
+                            <td className="text-start product-name">{product.name}</td>
+                            <td className="small-device">${product.price}</td>
                             <td>{product.quantity}</td>
                             <td>
                                 <button onClick={ () => navigate(`/updatestock/${product._id}`)} className='all-btn stock-update'>Update</button>

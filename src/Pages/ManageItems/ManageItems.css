@@ -13,6 +13,16 @@
     transition: 0.3s;
 }
 
+.product-name {
+    padding-left: 30px !important;
+}
+
 .stock-update {
     padding: 0 13px !important;
+}
+
+@media only screen and (max-width: 576px) {
+    .small-device {
+        display: none;
+    }
 }
