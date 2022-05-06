@@ -22,7 +22,7 @@
 
 .product-line {
     height: 1px;
-    width: 35%;
+    width: 30%;
     background-color: rgb(27, 62, 65);
 }
 
@@ -34,4 +34,28 @@
 
 .product-description {
     color: gray;
+}
+
+.manage-btn {
+    margin-right: 30px;
+}
+
+@media only screen and (max-width: 576px) {
+    .products-div {
+        grid-template-columns: 1fr;
+    }
+
+    .manage-add-btn {
+        flex-direction: column;
+    }
+
+    .manage-btn {
+        margin-right: 0px;
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+    .products-div {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

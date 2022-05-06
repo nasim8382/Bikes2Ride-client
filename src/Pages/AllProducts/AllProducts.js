@@ -56,8 +56,8 @@ const AllProducts = () => {
                     )
                 }
                 </div>
-                <div className='d-flex align-items center justify-content-center'>
-                    <button onClick={ () => navigate("/manageitems")} className='all-btn mt-4 me-5'>Manage Inventory</button>
+                <div className='d-flex align-items center justify-content-center manage-add-btn'>
+                    <button onClick={ () => navigate("/manageitems")} className='all-btn mt-4 manage-btn'>Manage Inventory</button>
                     <button onClick={ () => navigate("/additems")} className='all-btn mt-4'>Add New Items</button>
                 </div>
             </div>
