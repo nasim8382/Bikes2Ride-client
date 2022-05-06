@@ -1,0 +1,18 @@
+.table-section {
+    padding-bottom: 200px;
+}
+
+.delete-icon {
+    color: rgb(197, 53, 55);
+    font-size: 40px;
+    border: none;
+}
+
+.delete-icon:hover {
+    color: rgb(27, 62, 65);
+    transition: 0.3s;
+}
+
+.stock-update {
+    padding: 0 13px !important;
+}

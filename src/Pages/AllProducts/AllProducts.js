@@ -3,11 +3,16 @@ import PageTitle from '../Shared/PageTitle/PageTitle';
 import Typewriter from 'typewriter-effect';
 import useProducts from '../../hooks/useProducts';
 import './AllProducts.css';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import spinnerImg from '../../images/spinner1.gif';
 
 const AllProducts = () => {
     const [products] = useProducts();
     const navigate = useNavigate();
+
+    if (products.length === 0) {
+        return <img className="img-fluid spinner-img mx-auto d-block" src={spinnerImg} alt="" />
+    }
 
     return (
         <div>
@@ -52,12 +57,8 @@ const AllProducts = () => {
                 }
                 </div>
                 <div className='d-flex align-items center justify-content-center'>
-                    <Link to="/manageitems" className='link-style'>
-                        <button className='all-btn mt-4 me-5'>Manage Inventory</button>
-                    </Link>
-                    <Link to="/additems" className='link-style'>
-                        <button className='all-btn mt-4'>Add New Items</button>
-                    </Link>
+                    <button onClick={ () => navigate("/manageitems")} className='all-btn mt-4 me-5'>Manage Inventory</button>
+                    <button onClick={ () => navigate("/additems")} className='all-btn mt-4'>Add New Items</button>
                 </div>
             </div>
             </div>

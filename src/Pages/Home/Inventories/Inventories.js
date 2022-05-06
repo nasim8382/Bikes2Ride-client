@@ -1,11 +1,16 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import useProducts from '../../../hooks/useProducts';
+import spinnerImg from '../../../images/loader1.gif';
 
 const Inventories = () => {
     const [products] = useProducts();
     const navigate = useNavigate();
     const sixProducts = products.slice(0, 6);
+
+    if (products.length === 0) {
+        return <img className="img-fluid spinner-img mt-5 mx-auto d-block" src={spinnerImg} alt="" />
+    }
 
     return (
         <div>
