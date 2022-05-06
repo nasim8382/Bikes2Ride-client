@@ -37,13 +37,13 @@ const AllProducts = () => {
                             <img src={product.image} className="img-fluid" alt="product" />
                             <div className='d-flex justify-content-center align-items-center'>
                                     <div className='product-line'></div>
-                                    <h5 className='category-text'>{product.category}</h5>
+                                    <h5 className='category-text text-capitalize'>{product.category}</h5>
                                     <div className='product-line'></div>
                             </div>
-                            <h2 className='text-center green mt-3'>{product.name}</h2>
+                            <h2 className='text-center green mt-3 text-uppercase'>{product.name}</h2>
                             <p className='product-description'>"{product.description}"</p>
                             <h4 className='mb-3 ms-4'>
-                            Supplier: <span className='green'>{product.supplier}</span>
+                            Supplier: <span className='green text-capitalize'>{product.supplier}</span>
                             </h4>
                             <h4 className='mb-3 ms-4'>
                             Price: <span className='green'>${product.price}</span>

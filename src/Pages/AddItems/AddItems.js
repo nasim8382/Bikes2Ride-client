@@ -1,12 +1,23 @@
+import axios from 'axios';
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import { useAuthState } from "react-firebase-hooks/auth"
 import Typewriter from 'typewriter-effect';
 import PageTitle from '../Shared/PageTitle/PageTitle';
+import auth from '../../firebase.init';
 import './AddItems.css';
 
 const AddItems = () => {
     const { register, handleSubmit } = useForm();
-    const onSubmit = data => console.log(data);
+    const [user] = useAuthState(auth);
+
+    const onSubmit = (data, event) => {
+        console.log(data);
+        axios.post('http://localhost:5000/product', data)
+            .then(res => console.log(res));
+            alert('Products added successfully');
+            event.target.reset();
+    };
 
     return (
         <div className='add-items-section'>
@@ -37,10 +48,10 @@ const AddItems = () => {
                                 <input placeholder="Product URL" className="mb-4 signup-input" type="text" {...register("image")} required/>
                                 <input placeholder="Product Category" className="mb-4 signup-input" type="text" {...register("category")} required/>
                                 <input placeholder="Product Description" className="mb-4 signup-input" type="text" {...register("description")} required/>
-                                <input placeholder="Product Supplier Name" className="mb-4 signup-input" type="text" {...register("supplier_name")} required/>
+                                <input placeholder="Product Supplier Name" className="mb-4 signup-input" type="text" {...register("supplier")} required/>
                                 <input placeholder="Product Price" className="mb-4 signup-input" type="text" {...register("price")} required/>
                                 <input placeholder="Product Quantity" className="mb-4 signup-input" type="text" {...register("quantity")} required/>
-                                <input placeholder="Your Email" className="mb-4 signup-input" type="text" {...register("email")} required/>
+                                <input placeholder="Your Email" className="mb-4 signup-input" type="text" {...register("email", { value: user.email})} required/>
                                 <input className='submit-style mx-auto' type="submit" value="Add Items" />
                             </form>
                             </div>
