@@ -23,10 +23,10 @@ const Services = () => {
             </div>
 
             <div className='row service-section  service-section-first'>
-                <div className="col-6">
+                <div className="col-12 col-md-6 services-img">
                     <img className='img-fluid w-100 img-hover' src={service1} alt="" />
                 </div>
-                <div className="col-6 my-auto">
+                <div className="col-12 col-md-6 my-auto">
                     <div className='d-flex align-items-center my-5 history-title'>
                         <div className='straight-line'></div>
                         <h1 className='section-header-title'>Bike Repair</h1>
@@ -38,8 +38,8 @@ const Services = () => {
                 </div>
             </div>
 
-            <div className='row service-section'>
-                <div className="col-6 my-auto">
+            <div className='row service-section service-section-second'>
+                <div className="col-12 col-md-6 my-auto">
                     <div className='d-flex align-items-center my-5 history-title'>
                         <div className='straight-line'></div>
                         <h1 className='section-header-title'>Bike Fitting</h1>
@@ -49,16 +49,16 @@ const Services = () => {
                         <button className='all-btn d-block mx-auto mt-5'>Contact Us</button>
                     </Link>
                 </div>
-                <div className="col-6">
+                <div className="col-12 col-md-6 services-img">
                     <img className='img-fluid w-100 img-hover' src={service2} alt="" />
                 </div>
             </div>
 
             <div className='row service-section service-section-third'>
-                <div className="col-6">
+                <div className="col-12 col-md-6 services-img">
                     <img className='img-fluid w-100 img-hover' src={service3} alt="" />
                 </div>
-                <div className="col-6 my-auto">
+                <div className="col-12 col-md-6 my-auto">
                     <div className='d-flex align-items-center my-5 history-title'>
                         <div className='straight-line'></div>
                         <h1 className='section-header-title'>Bike Rental</h1>

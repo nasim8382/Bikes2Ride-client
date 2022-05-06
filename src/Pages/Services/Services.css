@@ -14,3 +14,40 @@
 .service-section-third {
     padding-bottom: 100px;
 }
+
+@media only screen and (max-width: 576px) {
+    .service-section-second {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .service-section {
+        margin-bottom: 70px;
+    }
+
+    .service-section-first {
+        margin-top: 70px;
+    }
+
+    .service-section-third {
+        padding-bottom: 130px;
+    }
+}
+
+@media only screen and (min-width:577px) and (max-width:992px) {
+    .services-img {
+        margin: auto 0;
+    }
+
+    .service-section {
+        margin-bottom: 10px;
+    }
+
+    .service-section-first {
+        margin-top: -20px;
+    }
+
+    .service-section-third {
+        padding-bottom: 150px;
+    }
+}
