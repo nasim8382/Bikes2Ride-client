@@ -23,7 +23,7 @@ const AddItems = () => {
             </div>
             <div className="container">
                 <div className="row">
-                    <div className="col-7">
+                    <div className="col-12 col-md-7">
                         <div className='add-bg'>
                             <div className='add-form'>
 
@@ -46,7 +46,7 @@ const AddItems = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-5"></div>
+                    <div className="col-12 col-md-5"></div>
                 </div>
             </div>
         </div>

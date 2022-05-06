@@ -31,3 +31,28 @@
     color: rgb(27, 62, 65);
     transition: 0.3s;
 }
+
+@media only screen and (max-width: 576px) {
+    .items-div {
+        width: 260px;
+        padding: 0px;
+        flex-direction: column;
+    }
+
+    .items-header {
+        width: 220px;
+        margin: 0 auto;
+        padding-left: 20%;
+        padding-bottom: 10px;
+    }
+}
+
+@media only screen and (min-width:577px) and (max-width: 992px) {
+    .items-div {
+        width: 680px;
+    }
+    
+    .items-header {
+        width: 220px;
+    }
+}

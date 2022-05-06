@@ -22,7 +22,7 @@
 
 .footer-input {
     width: 50%;
-    height: 61px;
+    height: 53px;
     margin-top: 23px;
     border-radius: 5px;
 }
@@ -99,6 +99,5 @@
 
     .footer-input {
         width: 40%;
-        height: 53px;
     }
 }
