@@ -25,8 +25,8 @@ const About = () => {
             </div>
 
             <div className='container mission-section'>
-                <div className="row">
-                    <div className="col-6">
+                <div className="row mission-div">
+                    <div className="col-12 col-lg-6">
                         <div className='d-flex align-items-center mb-3'>
                             <div className='straight-line'></div>
                             <h1 className='section-header-title'>Our Mission</h1>
@@ -54,17 +54,17 @@ const About = () => {
                             <div className='percentage-width progress-three'></div>
                         </div>
                     </div>
-                    <div className="col-6">
-                        <img className='img-fluid img-hover' src={mission} alt="" />
+                    <div className="col-12 col-lg-6">
+                        <img className='img-fluid img-hover mission-img' src={mission} alt="" />
                     </div>
                 </div>
             </div>
 
             <div className='row history-section'>
-                <div className="col-6">
+                <div className="col-12 col-lg-6">
                     <img className='img-fluid' src={history} alt="" />
                 </div>
-                <div className="col-6 my-auto ps-5">
+                <div className="col-12 col-lg-6 my-auto ps-5">
                     <div className='d-flex align-items-center my-5 history-title'>
                         <div className='straight-line'></div>
                         <h1 className='history-header-title'>Our History</h1>
@@ -79,17 +79,17 @@ const About = () => {
                     <h1 className='section-header-title'>Testimonials</h1>
                 </div>
                 <div className="row testimonials-section">
-                    <div className="col-4">
+                    <div className="col-12 col-md-4 testimonial-div">
                         <img className='img-fluid img-hover' src={testimonial1} alt="" />
                         <h4 className='text-center my-3'>ALI BONFIRE</h4>
                         <p>« Mountain bikes or road bikes? I like to ride both types of bicycles. This is why I love renting miscellaneous bike models at this place! It was an unforgettable experience for me. But what I really liked was a service provided by Bikes2Ride….»</p>
                     </div>
-                    <div className="col-4">
+                    <div className="col-12 col-md-4 testimonial-div">
                         <img className='img-fluid img-hover' src={testimonial2} alt="" />
                         <h4 className='text-center my-3'>STEVEN HAWKING</h4>
                         <p>« Me and my extended family, 7 total, rented bikes from this place during our visit in June 2015. Rent a Bike was excellent, they were friendly and very informative, and they also gave us a run-down of the trail…»</p>
                     </div>
-                    <div className="col-4">
+                    <div className="col-12 col-md-4 testimonial-div">
                         <img className='img-fluid img-hover' src={testimonial3} alt="" />
                         <h4 className='text-center my-3'>GERALD CUTLER</h4>
                         <p>« With a lot of live DJ events that our team does every single night of the year and the locations spanning across the whole country, we were in a dire need for good live streaming management. This was made possible…»</p>

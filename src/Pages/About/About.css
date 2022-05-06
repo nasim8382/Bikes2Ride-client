@@ -48,6 +48,7 @@
 
 .history-text {
     width: 80%;
+    font-size: 18px;
     margin: 0 auto;
     color: white;
 }
@@ -64,4 +65,67 @@
     width: 90%;
     margin: 5px auto;
     color: rgb(27, 62, 65);
+}
+
+@media only screen and (max-width: 576px) {
+    .mission-section {
+        margin-top: 50px;
+    }
+
+    .mission-div {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .mission-img {
+        margin: 0 auto;
+        display: block;
+        padding-bottom: 50px;
+    }
+
+    .history-section {
+        width: 95%;
+        margin: 100px auto;
+        padding-top: 15px;
+    }
+
+    .history-title {
+        width: 90%;
+    }
+
+    .history-text {
+        width: 90%;
+        padding-bottom: 50px;
+    }
+
+    .testimonial-div {
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+    .mission-section {
+        margin-top: 50px;
+    }
+
+    .mission-div {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .mission-img {
+        margin: 0 auto;
+        display: block;
+        padding-bottom: 50px;
+    }
+
+    .history-section {
+        width: 90%;
+        margin: 100px auto;
+        padding-top: 15px;
+    }
+
+    .history-text {
+        padding-bottom: 50px;
+    }
 }
