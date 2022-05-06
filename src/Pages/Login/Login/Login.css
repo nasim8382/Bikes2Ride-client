@@ -1,3 +1,21 @@
+.form-bg-login {
+    width: 500px;
+    height: 610px;
+    background-color: rgb(27, 62, 65);
+    border-radius: 10px;
+    margin: 0 auto;  
+}
+
+.form-container-login {
+    width: 500px;
+    height: 610px;
+    background-image: url("../../../images//bg.jpg");
+    border: 1px solid #95A0A7;
+    box-sizing: border-box;
+    border-radius: 10px;
+    transform: translate(15px, 15px);
+}
+
 .reset-password {
     font-size: 18px;
     color: rgb(197, 53, 55);
@@ -10,5 +28,17 @@
 
 .login-header-title {
     color: rgb(27, 62, 65);
+}
+
+@media only screen and (max-width: 576px) {
+    .form-bg-login {
+        width: 300px;
+        height: 620px;
+    }
+    
+    .form-container-login {
+        width: 300px;
+        height: 620px;
+    }
 }
 

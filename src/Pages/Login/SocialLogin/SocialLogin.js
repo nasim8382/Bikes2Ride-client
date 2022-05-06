@@ -48,8 +48,8 @@ const SocialLogin = () => {
         <div>
             {loadingText}
             {errorElement}
-            <div className='d-flex justify-content-center align-items-center mt-4'>
-                <button className='me-4 d-flex align-items-center social-login' onClick={ () => signInWithGoogle() }>
+            <div className='d-flex justify-content-center align-items-center mt-4 social-btn'>
+                <button className='d-flex align-items-center social-login' onClick={ () => signInWithGoogle() }>
                     <img className='mx-3' height={30} src={google} alt="" />
                     <p>Google</p>
                 </button>

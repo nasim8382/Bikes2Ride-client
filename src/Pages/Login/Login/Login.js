@@ -75,10 +75,10 @@ const Login = () => {
             </div>
 
             <div className="container">
-                <div className="row">
-                    <div className="col-7">
-                        <div className='form-bg-sign-up'>
-                            <div className='form-container-sign-up'>
+                <div className="row login-container">
+                    <div className="col-12 col-md-7">
+                        <div className='form-bg-login'>
+                            <div className='form-container-login'>
 
                             <div className='d-flex align-items-center justify-content-center mt-5'>
                                 <div className='straight-line'></div>
@@ -110,7 +110,7 @@ const Login = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-5">
+                    <div className="col-12 col-md-5 quotes-text">
                         <h1>“Life is like riding a bicycle – in order to keep your balance, you must keep moving.”</h1>
                         <h4>Albert Einstein</h4>
                     </div>
