@@ -34,3 +34,13 @@
     height: 2px;
     background-color: rgb(27, 62, 65);
 }
+
+@media only screen and (max-width:992px) {
+    .contact-text {
+        margin-top: 50px;
+    }
+
+    .contact-header {
+        justify-content: center;
+    }
+}

@@ -26,14 +26,13 @@ const Contact = () => {
                     />
                 </h1>
             </div>
-
             <div className="container contact-section">
                 <div className="row">
-                    <div className="col-8 my-auto">
+                    <div className="col-12 col-lg-8 my-auto">
                         <img className='img-fluid' src={contactImage} alt="" />
                     </div>
-                    <div className="col-4 contact-text">
-                        <div className='d-flex align-items-center my-4'>
+                    <div className="col-12 col-lg-4 contact-text">
+                        <div className='d-flex align-items-center my-4 contact-header'>
                             <div className='straight-line'></div>
                             <h1 className='section-header-title'>Get In Touch</h1>
                         </div>
