@@ -61,3 +61,44 @@
     color: rgb(255, 40, 91);
     cursor: pointer;
 }
+
+@media only screen and (max-width: 576px) {
+    .newsletter-section {
+        height: 320px;
+        top: -10%;
+        left: 14%;
+    }
+
+    .newsletter-input {
+        flex-direction: column;
+    }
+
+    .footer-input {
+        width: 80%;
+    }
+
+    .footer-social {
+        padding-top: 170px;
+        padding-bottom: 40px;
+        padding-left: 50px;
+    }
+
+    .footer-services {
+        padding-top: 40px;
+        padding-left: 50px;
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width:992px) {
+    .newsletter-section {
+        width: 90%;
+        height: 140px;
+        top: -15%;
+        left: 5%;
+    }
+
+    .footer-input {
+        width: 40%;
+        height: 53px;
+    }
+}

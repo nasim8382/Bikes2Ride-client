@@ -13,10 +13,10 @@ const Footer = () => {
         <div className='footer-section'>
             <div className='newsletter-section mx-auto'>
                 <div className="row">
-                    <div className="col-6">
+                    <div className="col-12 col-md-5 col-lg-6">
                         <h2 className='text-center newsletter-title'>Join Our NewsLetter</h2>
                     </div>
-                    <div className="col-6 d-flex align-items-center">
+                    <div className="col-12 col-md-7 col-lg-6 d-flex align-items-center newsletter-input">
                             <input className='footer-input' type="email" placeholder='Input Your Email' />
                             <button className='all-btn mt-4'>Subscribe Now</button>
                     </div>
@@ -25,7 +25,7 @@ const Footer = () => {
 
             <div className="container footer-text">
                 <div className="row">
-                    <div className="col-4">
+                    <div className="col-12 col-md-4 footer-social">
                         <div className='d-flex align-items-center'>
                             <img src={icon} alt="" />
                             <img className='ms-3 footer-logo-image' src={logo} alt="" />
@@ -39,7 +39,7 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    <div className="col-4 text-white ps-5">
+                    <div className="col-12 col-md-4 text-white ps-5 footer-contact">
                         <h2 className='text-uppercase'>Contact Us</h2>
                         <p><span style={{color: 'rgb(255, 40, 91)'}}>Phone: </span>+ 123 – 456 – 7890</p>
                         <p><span style={{color: 'rgb(255, 40, 91)'}}>Address: </span>2130 Fulton Street San Diego, <br/>
@@ -47,7 +47,7 @@ const Footer = () => {
                         <p><span style={{color: 'rgb(255, 40, 91)'}}>Mail: </span>info@bikes2ride.org</p>
                     </div>
                     
-                    <div className="col-4 text-white footer-services">
+                    <div className="col-12 col-md-4 text-white footer-services">
                         <h2 className='text-uppercase'>Services</h2>
                         <Link to="/services" className='link-style'>
                             <h6 className='my-3'>Bike Repair</h6>
