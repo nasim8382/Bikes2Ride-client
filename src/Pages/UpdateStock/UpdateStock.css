@@ -1,0 +1,75 @@
+.update-section {
+    padding-bottom: 300px;
+}
+
+.update-div {
+    margin-top: 70px;
+    padding: 30px 50px;
+    border-radius: 5px 25px;
+}
+
+.inventory-btn {
+    margin-top: 100px;
+}
+
+.delivered-btn {
+    padding: 2px 30px !important;
+}
+
+.quantity {
+    border: 1px solid rgb(27, 62, 65);
+    border-radius: 5px;
+    height: 40px;
+}
+
+.quantity::placeholder {
+    padding-left: 20%;
+    color: rgb(27, 62, 65);
+}
+
+.restock {
+    background-color: rgb(197, 53, 55);
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    box-shadow: inset 0 0 0 0 rgb(27, 62, 65);
+    transition: ease-out 0.5s;
+    outline: none;
+}
+
+.restock:hover {
+    box-shadow: inset 150px 0 0 0 rgb(27, 62, 65);
+}
+
+@media only screen and (max-width: 576px) {
+    .update-section {
+        padding-bottom: 250px;
+    }
+
+    .update-div {
+        width: 90%;
+        margin: 70px auto;
+    }
+
+    .inventory-btn {
+        margin-top: 50px;
+    }
+
+    .restock {
+        width: 190px;
+        margin-top: 25px;
+    }
+
+    .restock:hover {
+        box-shadow: inset 190px 0 0 0 rgb(27, 62, 65);
+    }
+
+    .delivered-btn {
+        padding: 2px 40px !important;
+    }
+}

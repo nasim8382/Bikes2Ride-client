@@ -5,11 +5,26 @@ import Typewriter from "typewriter-effect";
 import useProducts from "../../hooks/useProducts";
 import PageTitle from "../Shared/PageTitle/PageTitle";
 import "./ManageItems.css";
-import { RiChatDeleteLine} from "react-icons/ri";
+import { RiChatDeleteLine } from "react-icons/ri";
+import axios from "axios";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const ManageItems = () => {
-    const [products] = useProducts();
+  const [products, setProducts] = useProducts();
   const navigate = useNavigate();
+
+  const handleDelete = id => {
+    const proceed = window.confirm("Are you sure?");
+    if (proceed) {
+      axios.delete(`http://localhost:5000/product/${id}`).then((res) => {
+        console.log(res);
+        const remaining = products.filter((service) => service._id !== id);
+        setProducts(remaining);
+        toast.success('Product deleted successfully');
+      });
+    }
+  };
 
   return (
     <div>
@@ -39,29 +54,43 @@ const ManageItems = () => {
               </tr>
             </thead>
             <tbody>
-                {
-                    products.map( product => (
-                        <tr className="text-center" key={product._id}>
-                            <td className="small-device">
-                                <img className="table-img" height={50} src={product.image} alt="" />
-                            </td>
-                            <td className="text-start product-name">{product.name}</td>
-                            <td className="small-device">${product.price}</td>
-                            <td>{product.quantity}</td>
-                            <td>
-                                <button onClick={ () => navigate(`/updatestock/${product._id}`)} className='all-btn stock-update'>Update</button>
-                            </td>
-                            <td>
-                                <RiChatDeleteLine className='delete-icon'/>
-                            </td>
-                        </tr>
-                    ))
-                }
+              {products.map((product) => (
+                <tr className="text-center" key={product._id}>
+                  <td className="small-device">
+                    <img
+                      className="table-img"
+                      height={50}
+                      src={product.image}
+                      alt=""
+                    />
+                  </td>
+                  <td className="text-start product-name">{product.name}</td>
+                  <td className="small-device">${product.price}</td>
+                  <td>{product.quantity}</td>
+                  <td>
+                    <button
+                      onClick={() => navigate(`/updatestock/${product._id}`)}
+                      className="all-btn stock-update"
+                    >
+                      Update
+                    </button>
+                  </td>
+                  <td>
+                    <RiChatDeleteLine onClick={() => handleDelete (product._id)} className="delete-icon" />
+                  </td>
+                </tr>
+              ))}
             </tbody>
           </Table>
-          <button onClick={ () => navigate("/additems")} className='all-btn mt-5 d-block mx-auto'>Add New Items</button>
+          <button
+            onClick={() => navigate("/additems")}
+            className="all-btn mt-5 d-block mx-auto"
+          >
+            Add New Items
+          </button>
         </div>
       </div>
+      <ToastContainer position="top-center" />
     </div>
   );
 };

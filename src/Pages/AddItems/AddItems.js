@@ -5,6 +5,8 @@ import { useAuthState } from "react-firebase-hooks/auth"
 import Typewriter from 'typewriter-effect';
 import PageTitle from '../Shared/PageTitle/PageTitle';
 import auth from '../../firebase.init';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './AddItems.css';
 
 const AddItems = () => {
@@ -15,7 +17,7 @@ const AddItems = () => {
         console.log(data);
         axios.post('http://localhost:5000/product', data)
             .then(res => console.log(res));
-            alert('Products added successfully');
+            toast.success('New Products added successfully');
             event.target.reset();
     };
 
@@ -60,6 +62,7 @@ const AddItems = () => {
                     <div className="col-12 col-md-5"></div>
                 </div>
             </div>
+            <ToastContainer position="top-center" />
         </div>
     );
 };
