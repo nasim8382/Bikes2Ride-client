@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Modal, Table } from "react-bootstrap";
+import { Modal, Table } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import Typewriter from "typewriter-effect";
 import useProducts from "../../hooks/useProducts";
