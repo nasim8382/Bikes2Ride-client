@@ -17,11 +17,28 @@ import Footer from './Pages/Shared/Footer/Footer';
 import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
 import AllProducts from './Pages/AllProducts/AllProducts';
 import UpdateStock from './Pages/UpdateStock/UpdateStock';
+import { useEffect, useState } from 'react';
+import spinner from '../src/images/spinner1.gif';
 
 function App() {
+  const [loading, setLoading] = useState(false);
+
+  useEffect( () => {
+    setLoading(true);
+    setTimeout( () => {
+      setLoading(false);
+    }, 2000)
+  }, [])
+
   return (
     <div className='main-body'>
-      <Header></Header>
+      {
+        loading ? 
+        <div className='container home-loader'>
+          <img src={spinner} alt="" />
+        </div>
+        : <>
+        <Header></Header>
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/home" element={<Home></Home>}></Route>
@@ -56,6 +73,8 @@ function App() {
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
+        </>
+      }
     </div>
   );
 }
