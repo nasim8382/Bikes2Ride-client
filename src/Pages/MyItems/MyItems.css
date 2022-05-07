@@ -1,5 +1,4 @@
 .my-items-section {
-    padding-top: 20px;
     padding-bottom: 400px;
 }
 
@@ -33,6 +32,10 @@
 }
 
 @media only screen and (max-width: 576px) {
+    .my-items-section {
+        padding-bottom: 300px;
+    }
+
     .items-div {
         width: 260px;
         padding: 0px;

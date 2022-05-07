@@ -11,7 +11,7 @@ import PageTitle from '../Shared/PageTitle/PageTitle';
 
 const About = () => {
     return (
-        <div>
+        <div className='about-section'>
             <PageTitle title="About"></PageTitle>
             <div className='d-flex align-items-center justify-content-center my-5'>
                 <div className='straight-line'></div>

@@ -5,7 +5,7 @@ import './SignUp.css';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import spinner from '../../../images/spinner.gif';
-import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 import PageTitle from '../../Shared/PageTitle/PageTitle';
 
@@ -24,9 +24,7 @@ const SignUp = () => {
         loading
     ] = useCreateUserWithEmailAndPassword(auth, {sendEmailVerification: true});
 
-    const [updateProfile, updating] = useUpdateProfile(auth);
-
-    if (loading || updating) {
+    if (loading) {
         loadingElement = <img className='spinner' src={spinner} alt="loading" />;
     }
 
@@ -57,7 +55,6 @@ const SignUp = () => {
         }
 
         await createUserWithEmailAndPassword(email, password);
-        await updateProfile({ displayName: name });
         navigate(from, { replace: true });
 
     };
@@ -119,7 +116,6 @@ const SignUp = () => {
                     </div>
                 </div>
             </div>
-
         </div>
     );
 };

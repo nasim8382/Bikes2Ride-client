@@ -1,5 +1,5 @@
 .blogs-section {
-    padding-bottom: 300px;
+    padding-bottom: 200px;
 }
 
 .blogs-div {
@@ -19,10 +19,6 @@ li {
 }
 
 @media only screen and (max-width: 576px) {
-    .blogs-section {
-        padding-bottom: 200px;
-    }
-
     .blogs-div {
         width: 95%;
         margin: 50px auto;

@@ -14,11 +14,14 @@ const AddItems = () => {
     const [user] = useAuthState(auth);
 
     const onSubmit = (data, event) => {
-        console.log(data);
         axios.post('http://localhost:5000/product', data)
-            .then(res => console.log(res));
-            toast.success('New Products added successfully');
-            event.target.reset();
+            .then(res => {
+                const {data} = res;
+                if (data.insertedId) {
+                    toast.success('New Products added successfully');
+                    event.target.reset();
+                }
+            });
     };
 
     return (
@@ -50,10 +53,10 @@ const AddItems = () => {
                                 <input placeholder="Product URL" className="mb-4 signup-input" type="text" {...register("image")} required/>
                                 <input placeholder="Product Category" className="mb-4 signup-input" type="text" {...register("category")} required/>
                                 <input placeholder="Product Description" className="mb-4 signup-input" type="text" {...register("description")} required/>
-                                <input placeholder="Product Supplier Name" className="mb-4 signup-input" type="text" {...register("supplier")} required/>
                                 <input placeholder="Product Price" className="mb-4 signup-input" type="text" {...register("price")} required/>
                                 <input placeholder="Product Quantity" className="mb-4 signup-input" type="text" {...register("quantity")} required/>
-                                <input placeholder="Your Email" className="mb-4 signup-input" type="text" {...register("email", { value: user.email})} required/>
+                                <input placeholder="Product Supplier Name" className="mb-4 signup-input" type="text" {...register("supplier", { value: user?.displayName})} required readOnly disabled/>
+                                <input placeholder="Your Email" className="mb-4 signup-input" type="text" {...register("email", { value: user?.email})} required readOnly disabled/>
                                 <input className='submit-style mx-auto' type="submit" value="Add Items" />
                             </form>
                             </div>
