@@ -76,7 +76,7 @@ const ManageItems = () => {
                   <td>{product.quantity}</td>
                   <td>
                     <button
-                      onClick={() => navigate(`/updatestock/${product._id}`)}
+                      onClick={() => navigate(`/inventory/${product._id}`)}
                       className="all-btn stock-update"
                     >
                       Update

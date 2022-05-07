@@ -36,7 +36,7 @@ const UpdateStock = () => {
         axios.put(`http://localhost:5000/product/${id}`, {quantity})
             .then(res => {
                 setIsReload(!isReload);
-                toast.success('One Product Delivered Successfully');
+                toast.success('One Product Delivered');
             });
     }
 

@@ -1,0 +1,26 @@
+.blogs-section {
+    padding-bottom: 300px;
+}
+
+.blogs-div {
+    width: 80%;
+    margin: 50px auto;
+    border-radius: 10px;
+    padding: 50px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 576px) {
+    .blogs-section {
+        padding-bottom: 200px;
+    }
+
+    .blogs-div {
+        width: 95%;
+        margin: 50px auto;
+        padding: 20px;
+    }
+}
