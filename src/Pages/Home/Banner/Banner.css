@@ -30,6 +30,7 @@
     text-transform: uppercase;
     position: relative;
     animation: text 2s 1;
+    font-weight: 700;
 }
 
 .cover p {

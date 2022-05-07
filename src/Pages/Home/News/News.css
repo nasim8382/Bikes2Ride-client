@@ -12,6 +12,7 @@
     color: rgb(27, 62, 65);
     width: 70%;
     margin: 10px auto;
+    font-weight: 600;
 }
 
 .news-section p {
@@ -31,6 +32,7 @@
     font-size: 50px;
     color: rgb(27, 62, 65);
     position: relative;
+    font-weight: 700;
 }
 
 @media only screen and (max-width: 576px) {
@@ -52,6 +54,7 @@
         position: absolute;
         margin-top: -70px ;
         margin-left: -220px;
+        margin-right: -70px;
     }
 
     .news-section h6 {

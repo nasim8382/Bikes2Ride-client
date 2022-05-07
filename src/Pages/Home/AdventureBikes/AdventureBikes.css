@@ -9,6 +9,7 @@
 .adventure-header {
     font-size: 50px;
     color: rgb(27, 62, 65);
+    font-weight: 700;
 }
 
 @media only screen and (max-width: 576px) {

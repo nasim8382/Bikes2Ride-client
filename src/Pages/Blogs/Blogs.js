@@ -67,7 +67,7 @@ const Blogs = () => {
                     <div className="blogs-div shadow-lg">
                         <h2 className='red'>What is the purpose of JWT and how does it work? <hr/></h2>
                         <h3>purpose of JWT: <hr/></h3>
-                        <p>JSON Web Token (JWT) is an open standard (RFC 7519) for securely transmitting information between parties as JSON object. It is compact, readable and digitally signed using a private key/ or a public key pair by the Identity Provider(IdP). So the integrity and authenticity of the token can be verified by other parties involved. The purpose of using JWT is not to hide data but to ensure the authenticity of the data. JWT is signed and encoded, not encrypted. JWT is a token based stateless authentication mechanism. Since it is a client-side based stateless session, server doesn’t have to completely rely on a datastore(database) to save session information.</p>
+                        <p className='green'>JSON Web Token (JWT) is an open standard (RFC 7519) for securely transmitting information between parties as JSON object. It is compact, readable and digitally signed using a private key/ or a public key pair by the Identity Provider(IdP). So the integrity and authenticity of the token can be verified by other parties involved. The purpose of using JWT is not to hide data but to ensure the authenticity of the data. JWT is signed and encoded, not encrypted. JWT is a token based stateless authentication mechanism. Since it is a client-side based stateless session, server doesn’t have to completely rely on a datastore(database) to save session information.</p>
                         <h3>JWT Authentication Workflow: <hr/></h3>
                         <ol className="green">
                             <li>User sign-in using username and password.</li>
@@ -75,7 +75,7 @@ const Blogs = () => {
                             <li>Moving forward, the client will use the JWT to access protected resources by passing the JWT in the HTTP Authorization header.</li>
                             <li>The resource server then verifies the authenticity of the token using the public key.</li>
                         </ol>
-                        <p>The Identity Provider generates a JWT certifying user identity, and the resource server decodes and verifies the authenticity of the token using the public key. Since the tokens are used for authorization and authentication in future requests and API calls great care must be taken to prevent security issues. These tokens shouldn’t be stored in publicly accessible areas like the browser’s local storage or cookies. In case there are no other choices, then the payload should be encrypted.</p>
+                        <p className='green'>The Identity Provider generates a JWT certifying user identity, and the resource server decodes and verifies the authenticity of the token using the public key. Since the tokens are used for authorization and authentication in future requests and API calls great care must be taken to prevent security issues. These tokens shouldn’t be stored in publicly accessible areas like the browser’s local storage or cookies. In case there are no other choices, then the payload should be encrypted.</p>
                     </div>
             </div>
         </div>

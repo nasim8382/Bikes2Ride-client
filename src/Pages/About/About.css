@@ -62,8 +62,7 @@
 }
 
 .testimonials-section p {
-    width: 90%;
-    margin: 5px auto;
+    padding: 5px 15px;
     color: rgb(27, 62, 65);
 }
 

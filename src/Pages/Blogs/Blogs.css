@@ -9,8 +9,13 @@
     padding: 50px;
 }
 
+.blogs-div p {
+    font-size: 18px;
+}
+
 li {
     margin-bottom: 10px;
+    font-size: 18px;
 }
 
 @media only screen and (max-width: 576px) {
