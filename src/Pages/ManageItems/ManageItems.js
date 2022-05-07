@@ -1,5 +1,5 @@
-import React from "react";
-import { Table } from "react-bootstrap";
+import React, { useState } from "react";
+import { Button, Modal, Table } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import Typewriter from "typewriter-effect";
 import useProducts from "../../hooks/useProducts";
@@ -7,23 +7,30 @@ import PageTitle from "../Shared/PageTitle/PageTitle";
 import "./ManageItems.css";
 import { RiChatDeleteLine } from "react-icons/ri";
 import axios from "axios";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const ManageItems = () => {
   const [products, setProducts] = useProducts();
   const navigate = useNavigate();
 
-  const handleDelete = id => {
-    const proceed = window.confirm("Are you sure?");
-    if (proceed) {
-      axios.delete(`http://localhost:5000/product/${id}`).then((res) => {
-        console.log(res);
-        const remaining = products.filter((service) => service._id !== id);
+  let [ID, setID] = useState("");
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = (id) => {
+    setShow(true);
+    setID(id);
+  };
+
+  const handleDelete = () => {
+      axios.delete(`http://localhost:5000/product/${ID}`).then((res) => {
+        const remaining = products.filter((service) => service._id !== ID);
         setProducts(remaining);
-        toast.success('Product deleted successfully');
+        toast.success("Product deleted successfully");
       });
-    }
+      handleClose();
+      return;
   };
 
   return (
@@ -76,7 +83,10 @@ const ManageItems = () => {
                     </button>
                   </td>
                   <td>
-                    <RiChatDeleteLine onClick={() => handleDelete (product._id)} className="delete-icon" />
+                    <RiChatDeleteLine
+                      onClick={() => handleShow(product._id)}
+                      className="delete-icon"
+                    />
                   </td>
                 </tr>
               ))}
@@ -91,6 +101,20 @@ const ManageItems = () => {
         </div>
       </div>
       <ToastContainer position="top-center" />
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title className= "red">Delete Confirmation</Modal.Title>
+        </Modal.Header>
+        <Modal.Body className= "green">Are you sure! you want to delete this product?</Modal.Body>
+        <Modal.Footer>
+          <button className="dialog-btn-cancel" onClick={handleClose}>
+            Cancel
+          </button>
+          <button className="dialog-btn-confirm" onClick={handleDelete}>
+            Confirm
+          </button>
+        </Modal.Footer>
+      </Modal>
     </div>
   );
 };

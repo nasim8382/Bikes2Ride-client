@@ -21,6 +21,41 @@
     padding: 0 13px !important;
 }
 
+.modal-content {
+    background-color: rgb(187, 223, 224) !important;
+    border: 2px solid rgb(104, 9, 9)!important;
+}
+
+.modal-header {
+    border-bottom: 1px solid rgb(197, 53, 55) !important;
+}
+
+.dialog-btn-cancel {
+    color: white;
+    background-color: rgb(197, 53, 55);
+    border: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+.dialog-btn-cancel:hover {
+    background-color: rgb(27, 62, 65);
+    transition: 0.4s;
+}
+
+.dialog-btn-confirm {
+    color: white;
+    background-color: rgb(27, 62, 65);
+    border: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+.dialog-btn-confirm:hover {
+    background-color: rgb(197, 53, 55);
+    transition: 0.4s;
+}
+
 @media only screen and (max-width: 576px) {
     .small-device {
         display: none;
