@@ -3,7 +3,7 @@ import "./Banner.css";
 import sliderImg1 from "../../../images/banner/banner1.jpg";
 import sliderImg2 from "../../../images/banner/banner2.jpg";
 import sliderImg3 from "../../../images/banner/banner3.jpg";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Banner = () => {
   const navigate = useNavigate();

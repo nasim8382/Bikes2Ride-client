@@ -9,6 +9,7 @@ import auth from '../../../firebase.init';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import PageTitle from '../../Shared/PageTitle/PageTitle';
+import axios from 'axios';
 
 const Login = () => {
     const emailRef = useRef('');
@@ -37,15 +38,18 @@ const Login = () => {
     }
 
     if (user) {
-        navigate(from, { replace: true });
+        // navigate(from, { replace: true });
     }
 
-    const handleSubmit = e => {
+    const handleSubmit = async e => {
         e.preventDefault();
         const email = e.target.email.value;
         const password = e.target.password.value;
 
-        signInWithEmailAndPassword(email, password);
+        await signInWithEmailAndPassword(email, password);
+        const {data} = await axios.post('https://intense-castle-31682.herokuapp.com/signin', {email});
+        localStorage.setItem('accessToken', data.accessToken);
+        navigate(from, { replace: true });
     }
 
     const resetPassword = async() => {

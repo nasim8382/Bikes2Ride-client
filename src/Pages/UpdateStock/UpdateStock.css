@@ -38,7 +38,7 @@
     border-radius: 5px;
     letter-spacing: 1px;
     box-shadow: inset 0 0 0 0 rgb(27, 62, 65);
-    transition: ease-out 0.5s;
+    transition: ease-out 0.3s;
     outline: none;
 }
 

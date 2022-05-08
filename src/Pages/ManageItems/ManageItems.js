@@ -9,6 +9,7 @@ import { RiChatDeleteLine } from "react-icons/ri";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import spinnerImg from '../../images/loader1.gif';
 
 const ManageItems = () => {
   const [products, setProducts] = useProducts();
@@ -23,8 +24,12 @@ const ManageItems = () => {
     setID(id);
   };
 
+  if (products.length === 0) {
+    return <img className="img-fluid spinner-img mt-5 mx-auto d-block" src={spinnerImg} alt="" />
+  }
+
   const handleDelete = () => {
-      axios.delete(`http://localhost:5000/product/${ID}`).then((res) => {
+      axios.delete(`https://intense-castle-31682.herokuapp.com/product/${ID}`).then((res) => {
         const remaining = products.filter((service) => service._id !== ID);
         setProducts(remaining);
         toast.success("Product deleted successfully");

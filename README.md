@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# Website Name : Bikes2Ride
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is client side [Code Link](https://github.com/ProgrammingHeroWC4/warehouse-management-client-side-nasim8382).
 
-## Available Scripts
+This is server side [Code Link](https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-nasim8382).
 
-In the project directory, you can run:
+# Want to see the site, Click the link below
 
-### `npm start`
+Bikes2Ride [Live Site Link](https://bikes-2-ride.web.app/).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## What I have done in this project-
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* I have use Heroku to deploy my server side code
 
-### `npm test`
+* I have used mongodb to store my database
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* I have used firebase for authentication system
 
-### `npm run build`
+* I have use JWT(JASON web token) for security purpose
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* I have used axios instead of fetch
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* I have created custom link to see the active link
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* I have created a fancy 404 not found page
 
-### `npm run eject`
+* I have made some private route for user
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* I have used Firebase to host my project
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* I have implemented sign in and sign out method
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* I have integrated some social media sign in method
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* I have used React Hook Form to collect data
 
-## Learn More
+## Technologies I used in this project-
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* Axios
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* Heroku
 
-### Code Splitting
+* mongodb
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+* Typewriter Effect
 
-### Analyzing the Bundle Size
+* React Helmet
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+* Bootstrap
 
-### Making a Progressive Web App
+* React Bootstrap
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+* React Router Dom
 
-### Advanced Configuration
+* Firebase
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+* React Firebase Hooks
 
-### Deployment
+* React Toastify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+* React Environment Variables
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* React Hook Form

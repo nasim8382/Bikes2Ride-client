@@ -14,7 +14,7 @@ const AddItems = () => {
     const [user] = useAuthState(auth);
 
     const onSubmit = (data, event) => {
-        axios.post('http://localhost:5000/product', data)
+        axios.post('https://intense-castle-31682.herokuapp.com/product', data)
             .then(res => {
                 const {data} = res;
                 if (data.insertedId) {

@@ -4,14 +4,14 @@ import Typewriter from 'typewriter-effect';
 import useProducts from '../../hooks/useProducts';
 import './AllProducts.css';
 import { useNavigate } from 'react-router-dom';
-import spinnerImg from '../../images/spinner1.gif';
+import spinnerImg from '../../images/loader1.gif';
 
 const AllProducts = () => {
     const [products] = useProducts();
     const navigate = useNavigate();
 
     if (products.length === 0) {
-        return <img className="img-fluid spinner-img mx-auto d-block" src={spinnerImg} alt="" />
+        return <img className="img-fluid spinner-img mx-auto d-block mt-5" src={spinnerImg} alt="" />
     }
 
     return (

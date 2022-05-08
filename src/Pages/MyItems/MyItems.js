@@ -1,30 +1,47 @@
+import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Typewriter from "typewriter-effect";
 import PageTitle from "../Shared/PageTitle/PageTitle";
 import "./MyItems.css";
 import { RiChatDeleteLine } from "react-icons/ri";
-import axios from "axios";
 import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
 import { Modal } from "react-bootstrap";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useNavigate } from "react-router-dom";
+import { signOut } from "firebase/auth";
+import axiosPrivate from "../../api/axiosPrivate";
+import spinnerImg from '../../images/loader1.gif';
 
 const MyItems = () => {
   const [user] = useAuthState(auth);
   const [userProducts, setUserProducts] = useState([]);
   let [ID, setID] = useState("");
   const [show, setShow] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const getProducts = async () => {
       const email = user.email;
-      const url = `http://localhost:5000/userproducts?email=${email}`;
-      const { data } = await axios.get(url);
-      setUserProducts(data);
+      const url = `https://intense-castle-31682.herokuapp.com/userproducts?email=${email}`;
+      try{
+        const { data } = await axiosPrivate.get(url);
+        setUserProducts(data);
+      }
+      catch(error){
+        if(error.response.status === 401 || error.response.status === 403){
+          signOut(auth);
+          navigate('/login');
+        }
+      }
     };
     getProducts();
-  }, [user]);
+  }, [user, navigate]);
+
+  if (userProducts.length === 0) {
+    return <img className="img-fluid spinner-img mt-5 mx-auto d-block" src={spinnerImg} alt="" />
+  }
 
   const handleClose = () => setShow(false);
   const handleShow = (id) => {
@@ -33,7 +50,7 @@ const MyItems = () => {
   };
 
   const handleDelete = () => {
-    axios.delete(`http://localhost:5000/product/${ID}`).then((res) => {
+    axios.delete(`https://intense-castle-31682.herokuapp.com/product/${ID}`).then((res) => {
       const remaining = userProducts.filter((service) => service._id !== ID);
       setUserProducts(remaining);
       toast.success("Product deleted successfully");

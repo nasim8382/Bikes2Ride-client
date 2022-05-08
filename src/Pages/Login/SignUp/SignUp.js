@@ -29,7 +29,6 @@ const SignUp = () => {
     }
 
     const onSubmit = async(data) => {
-        const name = data.name;
         const email = data.email;
         const password = data.password;
         const confirmpassword = data.confirmpassword;

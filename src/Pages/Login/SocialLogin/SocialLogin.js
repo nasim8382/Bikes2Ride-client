@@ -38,7 +38,7 @@ const SocialLogin = () => {
         if (googleUser || fbUser) {
             navigate(from, { replace: true });
         }
-    }, [googleUser, fbUser]);
+    }, [googleUser, fbUser, from, navigate]);
 
     if (googleLoading || fbLoading) {
         loadingText = <img className='loader' src={spinner} alt="spinner" />

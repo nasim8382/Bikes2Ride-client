@@ -10,21 +10,19 @@ import 'react-toastify/dist/ReactToastify.css';
 const UpdateStock = () => {
     const {id} =  useParams();
     const [product, setProduct] = useState([]);
-    const [isReload, setIsReload] = useState(false);
     const navigate = useNavigate();
 
     useEffect( () => {
-        axios.get(`http://localhost:5000/product/${id}`)
+        axios.get(`https://intense-castle-31682.herokuapp.com/product/${id}`)
             .then(res => setProduct(res.data));
-    }, [isReload]);
+    }, [ id, product ]);
 
     const handleIncreaseQuantity = e => {
         e.preventDefault();
         const quantity = parseInt(e.target.quantity.value) + parseInt(product.quantity);
 
-        axios.put(`http://localhost:5000/product/${id}`, {quantity})
+        axios.put(`https://intense-castle-31682.herokuapp.com/product/${id}`, {quantity})
             .then(res => {
-                setIsReload(!isReload);
                 toast.success('Stock Updated Successfully');
                 e.target.reset();
             });
@@ -33,9 +31,8 @@ const UpdateStock = () => {
     const handleDecreaseQuantity = () => {
         const quantity = parseInt(product.quantity) - 1;
 
-        axios.put(`http://localhost:5000/product/${id}`, {quantity})
+        axios.put(`https://intense-castle-31682.herokuapp.com/product/${id}`, {quantity})
             .then(res => {
-                setIsReload(!isReload);
                 toast.success('One Product Delivered');
             });
     }
